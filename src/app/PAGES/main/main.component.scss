@@ -1,6 +1,5 @@
 // :host uses the component itself as the containing div
 :host {
   display: grid;
-  height: 100vh;
-  place-items: center;
+  height: 100vh; // Sets the % of the viewport height
 }
