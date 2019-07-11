@@ -9,7 +9,8 @@ const routes: Routes = [];
   imports: [
     RouterModule.forRoot([
       { path: "", component: MainComponent },
-      { path: "resume", component: ResumeComponent }
+      { path: "resume", component: ResumeComponent },
+      { path: "home", component: MainComponent }
     ])
   ],
   exports: [RouterModule]
