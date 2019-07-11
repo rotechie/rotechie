@@ -1,3 +1,5 @@
+// Importing a theme is necessary for some material components such as the buttons to function properly. In this case, the hover was not working without the theme.
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 :host,
 body {
   font-family: "Nunito", sans-serif;
