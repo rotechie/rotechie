@@ -1,1 +1,31 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar-hamburger></app-nav-bar-hamburger>
+
+<div class="ega_main_card_container">
+  <div gardening id="ega_main_card_professional">
+    <button mat-button [matMenuTriggerFor]="menu1">Professional</button>
+    <mat-menu #menu1="matMenu">
+      <a routerLink="/professional-resume" routerLinkActive="active"
+        ><button mat-menu-item>Resume</button></a
+      >
+
+      <a routerLink="/professional-programming" routerLinkActive="active"
+        ><button mat-menu-item>Programming</button></a
+      >
+    </mat-menu>
+  </div>
+
+  <div gardening id="ega_main_card_leisure">
+    <button mat-button [matMenuTriggerFor]="menu2">Leisure</button>
+    <mat-menu #menu2="matMenu">
+      <a routerLink="/leisure-programming" routerLinkActive="active"
+        ><button mat-menu-item>Programming</button></a
+      >
+      <a routerLink="/leisure-gardening" routerLinkActive="active"
+        ><button mat-menu-item>Gardening</button></a
+      >
+      <a routerLink="/leisure-photography" routerLinkActive="active"
+        ><button mat-menu-item>Photography</button></a
+      >
+    </mat-menu>
+  </div>
+</div>

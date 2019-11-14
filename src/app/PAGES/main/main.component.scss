@@ -1,5 +1,38 @@
-// :host uses the component itself as the containing div
-:host {
+:host,
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
   display: grid;
-  height: 100vh; // Sets the % of the viewport height
+}
+a {
+  text-decoration: none;
+}
+.ega_main_card_container {
+  display: grid;
+  height: 50vh;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 20px;
+  margin-top: 10vh;
+}
+#ega_main_card_professional,
+#ega_main_card_leisure {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+}
+#ega_main_card_professional {
+  grid-column-start: 2;
+}
+#ega_main_card_leisure {
+  grid-column-start: 3;
+}
+.mat-button,
+.mat-menu-item {
+  width: 100%;
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
 }
