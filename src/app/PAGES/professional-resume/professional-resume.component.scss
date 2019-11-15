@@ -1,0 +1,16 @@
+h2 {
+  font-weight: normal;
+  font-size: 16px;
+}
+.ega_resume_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: auto;
+}
+.ega_qualification_titles {
+  grid-column-start: 2;
+}
+.ega_qualification_view {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}

@@ -6,6 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./professional-resume.component.scss"]
 })
 export class ResumeComponent implements OnInit {
+  changeValue: string = "";
+
   constructor() {}
 
   ngOnInit() {}

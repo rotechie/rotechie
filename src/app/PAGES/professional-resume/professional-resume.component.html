@@ -1,1 +1,23 @@
 <app-nav-bar-hamburger></app-nav-bar-hamburger>
+<app-nav-bar></app-nav-bar>
+<div class="ega_resume_container">
+  <div class="ega_qualification_titles">
+    <h2 (click)="changeValue = 'professional_skills'">
+      Professional Skills
+    </h2>
+    <h2 (click)="changeValue = 'licknuts'">Education</h2>
+    <h2>Achievements</h2>
+    <h2>Certifications</h2>
+    <h2>Languages</h2>
+  </div>
+  <div class="ega_qualification_view">
+    <div [ngSwitch]="changeValue">
+      <div *ngSwitchCase="'professional_skills'">
+        ..dadasdasdasdasdsadsadsadsadsadasdsadsadasdadasdAAAAASSS.
+      </div>
+      <div *ngSwitchCase="'licknuts'">
+        ..7777777
+      </div>
+    </div>
+  </div>
+</div>

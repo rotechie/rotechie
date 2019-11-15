@@ -20,7 +20,8 @@ nav {
   background: none;
 }
 nav ul {
-  text-align: center;
+  text-align: start;
+  margin-right: 20px;
 }
 nav ul li {
   display: inline-block;
@@ -184,10 +185,3 @@ nav ul li a:hover {
     margin: 5px 0;
   }
 }
-// .content {
-//   width: 100%;
-//   margin-top: 200px;
-//   font-size: 20px;
-//   color: #333;
-//   text-align: center;
-// }
