@@ -13,6 +13,8 @@ import { ProfessionalProgrammingComponent } from "./PAGES/professional-programmi
 import { LeisureProgrammingComponent } from "./PAGES/leisure-programming/leisure-programming.component";
 import { LeisureGardeningComponent } from "./PAGES/leisure-gardening/leisure-gardening.component";
 import { LeisurePhotographyComponent } from "./PAGES/leisure-photography/leisure-photography.component";
+import { CostaRicaComponent } from './COMPONENTS/costa-rica/costa-rica.component';
+import { ChristmasCardsComponent } from './COMPONENTS/christmas-cards/christmas-cards.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { LeisurePhotographyComponent } from "./PAGES/leisure-photography/leisure
     ProfessionalProgrammingComponent,
     LeisureProgrammingComponent,
     LeisureGardeningComponent,
-    LeisurePhotographyComponent
+    LeisurePhotographyComponent,
+    CostaRicaComponent,
+    ChristmasCardsComponent
   ],
   imports: [
     BrowserModule,

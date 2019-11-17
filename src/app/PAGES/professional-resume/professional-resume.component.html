@@ -1,11 +1,12 @@
 <app-nav-bar-hamburger></app-nav-bar-hamburger>
 <app-nav-bar></app-nav-bar>
+
 <div class="ega_resume_container">
   <div class="ega_qualification_titles">
     <h2 (click)="changeValue = 'professional_skills'">
       Professional Skills
     </h2>
-    <h2 (click)="changeValue = 'licknuts'">Education</h2>
+    <h2 (click)="changeValue = 'education'">Education</h2>
     <h2>Achievements</h2>
     <h2>Certifications</h2>
     <h2>Languages</h2>
@@ -13,10 +14,36 @@
   <div class="ega_qualification_view">
     <div [ngSwitch]="changeValue">
       <div *ngSwitchCase="'professional_skills'">
-        ..dadasdasdasdasdsadsadsadsadsadasdsadsadasdadasdAAAAASSS.
+        <ul class="ega_professional_skills">
+          <li>ServiceNow</li>
+          <li>Git</li>
+          <li>Responsive Design</li>
+          <li>HTML 5, CSS 3</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Bootstrap</li>
+          <li>Materialize</li>
+          <li>MongoDB</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>Adobe Premiere</li>
+          <li>Adobe After Effects</li>
+          <li>Adobe InDesign</li>
+          <li>MySQL</li>
+          <li>Heroku</li>
+          <li>WordPress</li>
+          <li>PHP</li>
+        </ul>
       </div>
-      <div *ngSwitchCase="'licknuts'">
-        ..7777777
+      <div *ngSwitchCase="'education'">
+        <ul class="ega_education">
+          <li>Full Stack Coding Bootcamp</li>
+          <li>The Python Megacourse</li>
+          <li>Business Continuity Institute</li>
+          <li>Bachelor of Arts in Photography</li>
+        </ul>
       </div>
     </div>
   </div>

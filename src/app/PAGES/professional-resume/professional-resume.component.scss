@@ -4,13 +4,58 @@ h2 {
 }
 .ega_resume_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-areas: "one two three four";
+  grid-template-columns: 1fr 1fr 2fr 1fr;
   grid-template-rows: auto;
 }
 .ega_qualification_titles {
-  grid-column-start: 2;
+  grid-area: two;
 }
 .ega_qualification_view {
   grid-row-start: 1;
-  grid-column-start: 3;
+  grid-area: three;
+}
+.ega_professional_skills,
+.ega_education {
+  display: grid;
+  grid-template-columns: auto auto;
+  list-style-type: none;
+}
+.ega_education li,
+.ega_professional_skills li {
+  font-size: 12px;
+}
+.ega_qualification_titles h2 {
+  transition: all 0.2s ease-in-out;
+}
+
+.ega_qualification_titles h2:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 700px) {
+  .ega_resume_container {
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four";
+    grid-template-columns: 1fr;
+  }
+  .ega_qualification_titles {
+    display: grid;
+    grid-template-areas: "one-a two-a";
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .ega_qualification_titles > h2:nth-child(2) {
+    grid-area: two-a;
+  }
+  .ega_education {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    grid-row-gap: 20px;
+    padding: 0px;
+  }
 }
