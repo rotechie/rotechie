@@ -7,9 +7,9 @@
       Professional Skills
     </h2>
     <h2 (click)="changeValue = 'education'">Education</h2>
-    <h2>Achievements</h2>
-    <h2>Certifications</h2>
-    <h2>Languages</h2>
+    <h2 (click)="changeValue = 'achievements'">Achievements</h2>
+    <h2 (click)="changeValue = 'certifications'">Certifications</h2>
+    <h2 (click)="changeValue = 'languages'">Languages</h2>
   </div>
   <div class="ega_qualification_view">
     <div [ngSwitch]="changeValue">
@@ -39,11 +39,97 @@
       </div>
       <div *ngSwitchCase="'education'">
         <ul class="ega_education">
-          <li>Full Stack Coding Bootcamp</li>
-          <li>The Python Megacourse</li>
-          <li>Business Continuity Institute</li>
-          <li>Bachelor of Arts in Photography</li>
+          <li>
+            <h2>ServiceNow Administration and Development</h2>
+            <p>
+              Working for the Department of Technology has brought me a unique
+              opportunity to immerse myself in the ServiceNow Platform. My
+              formal training in ServiceNow cosists of the following:
+            </p>
+            <ul>
+              <li>ServiceNow for Administrators</li>
+              <li>ServiceNow for Developers</li>
+              <li>Scripting in ServiceNow</li>
+            </ul>
+          </li>
+          <li>
+            <h2>Full Stack Coding Bootcamp</h2>
+            <p>The format for this bootcamp consisted of a 6 month...</p>
+          </li>
+
+          <li>
+            <h2>The Python Megacourse</h2>
+            <p>
+              The objective for taking this course is to automate my garden beds
+              through the use of sensors. I plan to implement the necessary
+              scripts in the python language.
+            </p>
+          </li>
+          <li>
+            <h2>Business Continuity Institute</h2>
+            <p>
+              The BCI the course progresses through business continuity
+              management (BCM) processes & practice and provides a solid
+              foundation in business continuity. Six professional practices are
+              covered and they include:
+            </p>
+            <ul>
+              <li>PP1 - Policy and Programme Management</li>
+              <li>PP2 - Embedding</li>
+              <li>PP3 - Analysis</li>
+              <li>PP4 - Design</li>
+              <li>PP5 - Implementation</li>
+              <li>PP6 - Validation</li>
+            </ul>
+          </li>
+          <li>
+            <h2>Bachelor of Arts in Photography</h2>
+            <p>
+              The Sacramento State University Photography program provided me
+              with strong foundations in both analog and digital expression.
+              This education gave me a design background that pairs well with
+              back end programming.
+            </p>
+          </li>
         </ul>
+      </div>
+      <div [ngSwitch]="changeValue">
+        <div *ngSwitchCase="'achievements'">
+          <ul class="ega_achievements">
+            <li>achievements</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+      <div [ngSwitch]="changeValue">
+        <div *ngSwitchCase="'certifications'">
+          <ul class="ega_certifications">
+            <li>Certification</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+      <div [ngSwitch]="changeValue">
+        <div *ngSwitchCase="'languages'">
+          <ul class="ega_languages">
+            <li>
+              <h2>English</h2>
+              <p>Fluent spoken and written</p>
+            </li>
+            <li>
+              <h2>Italian</h2>
+              <p>Fluent spoken and written</p>
+            </li>
+            <li>
+              <h2>Spanish</h2>
+              <p>Conversational; two years of formal education</p>
+            </li>
+            <li>
+              <h2>French</h2>
+              <p>Conversational; two years of formal education</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

@@ -16,14 +16,27 @@ h2 {
   grid-area: three;
 }
 .ega_professional_skills,
-.ega_education {
+.ega_education,
+.ega_achievements,
+.ega_certifications {
   display: grid;
   grid-template-columns: auto auto;
   list-style-type: none;
 }
+.ega_languages {
+  display: grid;
+  grid-template-columns: auto;
+  list-style-type: none;
+}
 .ega_education li,
-.ega_professional_skills li {
+.ega_professional_skills li,
+.ega_achievements,
+.ega_certifications,
+.ega_languages {
   font-size: 12px;
+}
+.ega_languages li p {
+  margin-left: 10px;
 }
 .ega_qualification_titles h2 {
   transition: all 0.2s ease-in-out;
