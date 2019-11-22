@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { MDBBootstrapModule } from "angular-bootstrap-md";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { MainComponent } from "./PAGES/main/main.component";
@@ -13,8 +14,7 @@ import { ProfessionalProgrammingComponent } from "./PAGES/professional-programmi
 import { LeisureProgrammingComponent } from "./PAGES/leisure-programming/leisure-programming.component";
 import { LeisureGardeningComponent } from "./PAGES/leisure-gardening/leisure-gardening.component";
 import { LeisurePhotographyComponent } from "./PAGES/leisure-photography/leisure-photography.component";
-import { CostaRicaComponent } from './COMPONENTS/costa-rica/costa-rica.component';
-import { ChristmasCardsComponent } from './COMPONENTS/christmas-cards/christmas-cards.component';
+import { ImageSliderComponent } from "./COMPONENTS/image-slider/image-slider.component";
 
 @NgModule({
   declarations: [
@@ -27,11 +27,11 @@ import { ChristmasCardsComponent } from './COMPONENTS/christmas-cards/christmas-
     LeisureProgrammingComponent,
     LeisureGardeningComponent,
     LeisurePhotographyComponent,
-    CostaRicaComponent,
-    ChristmasCardsComponent
+    ImageSliderComponent
   ],
   imports: [
     BrowserModule,
+    MDBBootstrapModule.forRoot(),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,

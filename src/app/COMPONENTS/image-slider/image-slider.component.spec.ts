@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CostaRicaComponent } from './costa-rica.component';
+import { ImageSliderComponent } from './image-slider.component';
 
-describe('CostaRicaComponent', () => {
-  let component: CostaRicaComponent;
-  let fixture: ComponentFixture<CostaRicaComponent>;
+describe('ImageSliderComponent', () => {
+  let component: ImageSliderComponent;
+  let fixture: ComponentFixture<ImageSliderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CostaRicaComponent ]
+      declarations: [ ImageSliderComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CostaRicaComponent);
+    fixture = TestBed.createComponent(ImageSliderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
