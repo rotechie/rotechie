@@ -1,3 +1,4 @@
+import { ChristmasCardGalleryService } from "./SERVICES/christmas-card-gallery.service";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { MDBBootstrapModule } from "angular-bootstrap-md";
@@ -37,7 +38,7 @@ import { ImageSliderComponent } from "./COMPONENTS/image-slider/image-slider.com
     MatMenuModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [ChristmasCardGalleryService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
