@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { spawn } from "child_process";
 
 @Component({
   selector: "app-leisure-programming",
@@ -8,8 +7,6 @@ import { spawn } from "child_process";
 })
 export class LeisureProgrammingComponent implements OnInit {
   programmingValue: string = "";
-  codeblock1: string =
-    "export class LeisureProgrammingComponent implements OnInit { <div> {{dick}} </div> }";
   constructor() {}
 
   ngOnInit() {}
