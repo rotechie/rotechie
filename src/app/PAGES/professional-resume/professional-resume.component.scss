@@ -4,9 +4,12 @@ h2 {
 }
 .ega_resume_container {
   display: grid;
-  grid-template-areas: "one two three four";
+  grid-template-areas:
+    "one one one one"
+    "one two three four";
   grid-template-columns: 1fr 1fr 2fr 1fr;
   grid-template-rows: auto;
+  margin-top: 10vh;
 }
 .ega_qualification_titles {
   grid-area: two;

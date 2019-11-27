@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ChristmasCardGalleryService } from "../../SERVICES/christmas-card-gallery.service";
+import { ChristmasCardGalleryService } from "../../../SERVICES/photo-christmas-gallery/christmas-card-gallery.service";
 
 @Component({
   selector: "app-image-slider",
