@@ -1,8 +1,11 @@
 <app-nav-bar-hamburger></app-nav-bar-hamburger>
 <app-nav-bar></app-nav-bar>
+<h1>Knowledge Library</h1>
 <div class="ega_sidebar_container">
-  <h2 (click)="programmingLanguage = 'Angular'">Angular</h2>
-  <h2 (click)="programmingLanguage = 'Git'">Git</h2>
+  <div class="ega_programming_language">
+    <h2 (click)="programmingLanguage = 'Angular'">Angular</h2>
+    <h2 (click)="programmingLanguage = 'Git'">Git</h2>
+  </div>
   <div [ngSwitch]="programmingLanguage">
     <div *ngSwitchCase="'Angular'" class="ega_angular">
       <app-data-binding></app-data-binding>
