@@ -2,6 +2,8 @@
 <div [ngSwitch]="photoCategory">
   <div *ngSwitchCase="'christmas'" class="ega_christmas">
     <mdb-carousel
+      nav-class="red"
+      indicatorClass="red"
       class="carousel slide carousel-fade"
       [animation]="'fade'"
       [interval]="'0'"
