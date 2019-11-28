@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ChristmasCardGalleryService } from "../../../SERVICES/photo-christmas-gallery/christmas-card-gallery.service";
+import { ChristmasCardGalleryService } from "../../../SERVICES/christmas-card-gallery.service";
 
 @Component({
   selector: "app-image-slider",
@@ -7,15 +7,19 @@ import { ChristmasCardGalleryService } from "../../../SERVICES/photo-christmas-g
   styleUrls: ["./image-slider.component.scss"]
 })
 export class ImageSliderComponent implements OnInit {
-  title = "Christmas";
-  visibleImages: any[] = [];
+  title = "Christmas Pics";
+  photoCategory: string = "";
+  christmasImages: any[] = [];
   constructor(
     private ChristmasCardGalleryService: ChristmasCardGalleryService
   ) {
-    this.visibleImages = this.ChristmasCardGalleryService.getImages();
+    this.christmasImages = this.ChristmasCardGalleryService.getImages();
+  }
+  aflack() {
+    console.log("turds ahoy");
   }
   ngOnChanges() {
-    this.visibleImages = this.ChristmasCardGalleryService.getImages();
+    this.christmasImages = this.ChristmasCardGalleryService.getImages();
   }
   ngOnInit() {}
 }

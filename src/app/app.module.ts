@@ -1,4 +1,4 @@
-import { ChristmasCardGalleryService } from "./SERVICES/photo-christmas-gallery/christmas-card-gallery.service";
+import { ChristmasCardGalleryService } from "./SERVICES/christmas-card-gallery.service";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { MDBBootstrapModule } from "angular-bootstrap-md";
@@ -18,13 +18,15 @@ import { LeisurePhotographyComponent } from "./PAGES/leisure-photography/leisure
 import { ImageSliderComponent } from "./COMPONENTS/STRUCTURAL/image-slider/image-slider.component";
 import { PropertyBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/property-binding/property-binding.component";
 import { GitBashComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/git-bash/git-bash.component";
-import { DataBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/data-binding.component';
-import { InterpolationComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/interpolation/interpolation.component';
-import { AttributeBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/attribute-binding/attribute-binding.component';
-import { ClassBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/class-binding/class-binding.component';
-import { StyleBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/style-binding/style-binding.component';
-import { EventBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/event-binding/event-binding.component';
-import { TwoWayBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/two-way-binding/two-way-binding.component';
+import { DataBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/data-binding.component";
+import { InterpolationComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/interpolation/interpolation.component";
+import { AttributeBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/attribute-binding/attribute-binding.component";
+import { ClassBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/class-binding/class-binding.component";
+import { StyleBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/style-binding/style-binding.component";
+import { EventBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/event-binding/event-binding.component";
+import { TwoWayBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/two-way-binding/two-way-binding.component";
+import { ImageGalleryComponent } from "./COMPONENTS/STRUCTURAL/image-gallery/image-gallery.component";
+import { SideBarComponent } from "./COMPONENTS/STRUCTURAL/side-bar/side-bar.component";
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { TwoWayBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-bi
     ClassBindingComponent,
     StyleBindingComponent,
     EventBindingComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    ImageGalleryComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule,

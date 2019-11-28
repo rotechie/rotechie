@@ -1,0 +1,19 @@
+<app-nav-bar-hamburger></app-nav-bar-hamburger>
+<app-nav-bar></app-nav-bar>
+<h1>Knowledge Library</h1>
+<div class="ega_sidebar_container">
+  <div class="ega_gallery">
+    <h2 (click)="gallery = 'Thailand'">Thailand</h2>
+    <h2 (click)="gallery = 'Italy'">Italy</h2>
+  </div>
+  <div [ngSwitch]="gallery">
+    <div *ngSwitchCase="'Thailand'" class="ega_thailand">
+      <app-data-binding></app-data-binding>
+    </div>
+  </div>
+  <div [ngSwitch]="gallery">
+    <div *ngSwitchCase="'Italy'" class="ega_italy">
+      <app-git-bash></app-git-bash>
+    </div>
+  </div>
+</div>

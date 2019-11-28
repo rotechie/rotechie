@@ -2,10 +2,10 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class ChristmasCardGalleryService {
-  visibleImages = [];
+  christmasImages = [];
 
   getImages() {
-    return (this.visibleImages = ega_christmas_gallery.slice(0));
+    return (this.christmasImages = ega_christmas_gallery.slice(0));
   }
 
   getImage(id: number) {
