@@ -17,6 +17,14 @@ import { LeisureGardeningComponent } from "./PAGES/leisure-gardening/leisure-gar
 import { LeisurePhotographyComponent } from "./PAGES/leisure-photography/leisure-photography.component";
 import { ImageSliderComponent } from "./COMPONENTS/STRUCTURAL/image-slider/image-slider.component";
 import { PropertyBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/property-binding/property-binding.component";
+import { GitBashComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/git-bash/git-bash.component";
+import { DataBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/data-binding.component';
+import { InterpolationComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/interpolation/interpolation.component';
+import { AttributeBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/attribute-binding/attribute-binding.component';
+import { ClassBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/class-binding/class-binding.component';
+import { StyleBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/style-binding/style-binding.component';
+import { EventBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/event-binding/event-binding.component';
+import { TwoWayBindingComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/data-binding/two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +38,15 @@ import { PropertyBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-
     LeisureGardeningComponent,
     LeisurePhotographyComponent,
     ImageSliderComponent,
-    PropertyBindingComponent
+    PropertyBindingComponent,
+    GitBashComponent,
+    DataBindingComponent,
+    InterpolationComponent,
+    AttributeBindingComponent,
+    ClassBindingComponent,
+    StyleBindingComponent,
+    EventBindingComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,

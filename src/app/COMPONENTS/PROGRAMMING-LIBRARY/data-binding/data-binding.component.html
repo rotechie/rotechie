@@ -1,0 +1,49 @@
+<div class="ega_programming_container">
+  <h2 class="ega_section_title">ANGULAR DATA BINDING</h2>
+  <div class="ega_main_list">
+    <h2 (click)="programmingValue = 'Interpolation'">Interpolation</h2>
+    <h2 (click)="programmingValue = 'Property Binding'">Property Binding</h2>
+    <h2 (click)="programmingValue = 'Attribute Binding'">Attribute Binding</h2>
+    <h2 (click)="programmingValue = 'Class Binding'">Class Binding</h2>
+    <h2 (click)="programmingValue = 'Style Binding'">Style Binding</h2>
+    <h2 (click)="programmingValue = 'Event Binding'">Event Binding</h2>
+    <h2 (click)="programmingValue = 'Two-Way Binding'">Two-Way Binding</h2>
+  </div>
+  <div class="ega_programming_view">
+    <div [ngSwitch]="programmingValue">
+      <div *ngSwitchCase="'Interpolation'" class="ega_interpolation">
+        <app-interpolation></app-interpolation>
+      </div>
+    </div>
+    <div [ngSwitch]="programmingValue">
+      <div *ngSwitchCase="'Property Binding'" class="ega_property">
+        asdkaskldjalksdjaskjdasjdlasdas
+      </div>
+    </div>
+    <div [ngSwitch]="programmingValue">
+      <div *ngSwitchCase="'Attribute Binding'" class="ega_attribute">
+        1212121221
+      </div>
+    </div>
+    <div [ngSwitch]="programmingValue">
+      <div *ngSwitchCase="'Class Binding'" class="ega_class">
+        Class Binding
+      </div>
+    </div>
+    <div [ngSwitch]="programmingValue">
+      <div *ngSwitchCase="'Style Binding'" class="ega_style">
+        style binding
+      </div>
+    </div>
+    <div [ngSwitch]="programmingValue">
+      <div *ngSwitchCase="'Event Binding'" class="ega_event">
+        EVENT BINDING
+      </div>
+      <div [ngSwitch]="programmingValue">
+        <div *ngSwitchCase="'Event Binding'" class="ega_two_way">
+          TWO WAY
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

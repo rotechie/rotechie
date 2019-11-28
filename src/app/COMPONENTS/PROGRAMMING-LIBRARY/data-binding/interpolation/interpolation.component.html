@@ -1,0 +1,54 @@
+<div class="ega_interpolations">
+  <p>
+    In any angular html template, you can inject text dynamically. Text can be
+    stored within variables in the components.ts file. Through variable
+    replacement, you can inject this text into the variable call of the html.
+    This requires you to do two things:
+  </p>
+  <br />
+  <ol>
+    <li>
+      Declare your variable in the components.ts file:
+      <br />
+      <br />
+      <!-- prettier-ignore -->
+      <pre class="prettyprint lang-typescript">
+        import &#123; Component  &#125; from '@angular/core';
+  
+        @Component(&#123;
+          selector: 'app-root',
+          template: `
+          &lt;h1&gt;&#123;&#123;title&#125;&#125;&lt;/h1&gt;
+          &lt;h2&gt;My favorite hero is: &#123; &#123; myHero &#125; &#125; &lt;/h2&gt;
+            `
+            &#125;)
+        export class AppComponent &#123;
+          title = 'Tour of Heroes';
+          <span>myHero = 'Windstorm'</span>;
+          &#125;
+      </pre>
+    </li>
+    <li>
+      Call your variable's name in the template file surrounding it with two
+      angle brackets:
+      <br />
+      <br />
+      <!-- prettier-ignore -->
+      <pre class="prettyprint lang-typescript">
+          import &#123; Component  &#125; from '@angular/core';
+  
+          @Component(&#123;
+            selector: 'app-root',
+            template: `
+            &lt;h1&gt;&#123;&#123;title&#125;&#125;&lt;/h1&gt;
+            &lt;h2&gt;My favorite hero is: <span>&#123; &#123; myHero &#125; &#125;</span> &lt;/h2&gt;
+              `
+              &#125;)
+          export class AppComponent &#123;
+            title = 'Tour of Heroes';
+            myHero = 'Windstorm';
+            &#125;
+        </pre>
+    </li>
+  </ol>
+</div>

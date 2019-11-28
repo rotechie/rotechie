@@ -1,104 +1,16 @@
 <app-nav-bar-hamburger></app-nav-bar-hamburger>
 <app-nav-bar></app-nav-bar>
-<h1>Knowledge Library</h1>
-
-<div class="ega_leisure_programming_container">
-  <h2 class="ega_data_binding">ANGULAR DATA BINDING</h2>
-  <div class="ega_leisure_programming_titles">
-    <h2 (click)="programmingValue = 'Interpolation'">Interpolation</h2>
-    <h2 (click)="programmingValue = 'Property Binding'">Property Binding</h2>
-    <h2 (click)="programmingValue = 'Attribute Binding'">Attribute Binding</h2>
-    <h2 (click)="programmingValue = 'Class Binding'">Class Binding</h2>
-    <h2 (click)="programmingValue = 'Style Binding'">Style Binding</h2>
-    <h2 (click)="programmingValue = 'Event Binding'">Event Binding</h2>
-    <h2 (click)="programmingValue = 'Two-Way Binding'">Two-Way Binding</h2>
+<div class="ega_sidebar_container">
+  <h2 (click)="programmingLanguage = 'Angular'">Angular</h2>
+  <h2 (click)="programmingLanguage = 'Git'">Git</h2>
+  <div [ngSwitch]="programmingLanguage">
+    <div *ngSwitchCase="'Angular'" class="ega_angular">
+      <app-data-binding></app-data-binding>
+    </div>
   </div>
-  <div class="ega_leisure_programming_view">
-    <div [ngSwitch]="programmingValue">
-      <div *ngSwitchCase="'Interpolation'" class="ega_interpolation">
-        <p>
-          In any angular html template, you can inject text dynamically. Text
-          can be stored within variables in the components.ts file. Through
-          variable replacement, you can inject this text into the variable call
-          of the html. This requires you to do two things:
-        </p>
-        <br />
-        <ol>
-          <li>
-            Declare your variable in the components.ts file:
-            <br />
-            <br />
-            <!-- prettier-ignore -->
-            <pre class="prettyprint lang-typescript">
-            import &#123; Component  &#125; from '@angular/core';
-
-            @Component(&#123;
-              selector: 'app-root',
-              template: `
-              &lt;h1&gt;&#123;&#123;title&#125;&#125;&lt;/h1&gt;
-              &lt;h2&gt;My favorite hero is: &#123; &#123; myHero &#125; &#125; &lt;/h2&gt;
-                `
-                &#125;)
-            export class AppComponent &#123;
-              title = 'Tour of Heroes';
-              <span>myHero = 'Windstorm'</span>;
-              &#125;
-          </pre>
-          </li>
-          <li>
-            Call your variable's name in the template file surrounding it with
-            two angle brackets:
-            <br />
-            <br />
-            <!-- prettier-ignore -->
-            <pre class="prettyprint lang-typescript">
-              import &#123; Component  &#125; from '@angular/core';
-  
-              @Component(&#123;
-                selector: 'app-root',
-                template: `
-                &lt;h1&gt;&#123;&#123;title&#125;&#125;&lt;/h1&gt;
-                &lt;h2&gt;My favorite hero is: <span>&#123; &#123; myHero &#125; &#125;</span> &lt;/h2&gt;
-                  `
-                  &#125;)
-              export class AppComponent &#123;
-                title = 'Tour of Heroes';
-                myHero = 'Windstorm';
-                &#125;
-            </pre>
-          </li>
-        </ol>
-      </div>
-    </div>
-    <div [ngSwitch]="programmingValue">
-      <div *ngSwitchCase="'Property Binding'" class="ega_property">
-        asdkaskldjalksdjaskjdasjdlasdas
-      </div>
-    </div>
-    <div [ngSwitch]="programmingValue">
-      <div *ngSwitchCase="'Attribute Binding'" class="ega_attribute">
-        1212121221
-      </div>
-    </div>
-    <div [ngSwitch]="programmingValue">
-      <div *ngSwitchCase="'Class Binding'" class="ega_class">
-        Class Binding
-      </div>
-    </div>
-    <div [ngSwitch]="programmingValue">
-      <div *ngSwitchCase="'Style Binding'" class="ega_style">
-        style binding
-      </div>
-    </div>
-    <div [ngSwitch]="programmingValue">
-      <div *ngSwitchCase="'Event Binding'" class="ega_event">
-        EVENT BINDING
-      </div>
-      <div [ngSwitch]="programmingValue">
-        <div *ngSwitchCase="'Event Binding'" class="ega_two_way">
-          TWO WAY
-        </div>
-      </div>
+  <div [ngSwitch]="programmingLanguage">
+    <div *ngSwitchCase="'Git'" class="ega_git">
+      <app-git-bash></app-git-bash>
     </div>
   </div>
 </div>
