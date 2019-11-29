@@ -1,6 +1,6 @@
 h2 {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 .ega_resume_container {
   display: grid;
@@ -16,8 +16,17 @@ h2 {
   grid-row-start: 1;
   grid-area: three;
 }
+.ega_education {
+  display: grid;
+  grid-template-columns: auto;
+  list-style-type: none;
+  grid-gap: 50px;
+}
+.ega_education img {
+  margin: 40px 0px;
+  max-width: 100%;
+}
 .ega_professional_skills,
-.ega_education,
 .ega_achievements,
 .ega_certifications {
   display: grid;
@@ -28,13 +37,6 @@ h2 {
   display: grid;
   grid-template-columns: auto;
   list-style-type: none;
-}
-.ega_education li,
-.ega_professional_skills li,
-.ega_achievements,
-.ega_certifications,
-.ega_languages {
-  font-size: 12px;
 }
 .ega_languages li p {
   margin-left: 10px;
