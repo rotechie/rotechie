@@ -1,16 +1,12 @@
 <div class="ega_image_container">
   <div class="ega_photo_side_menu">
     <h2 (click)="photoCategory = 'christmas'">Christmas</h2>
-    <h2 (click)="photoCategory = 'christmas'">Christmas</h2>
-    <h2 (click)="photoCategory = 'christmas'">Christmas</h2>
-    <h2 (click)="photoCategory = 'christmas'">Christmas</h2>
+    <h2 (click)="photoCategory = 'thailand'">Thailand</h2>
   </div>
   <div [ngSwitch]="photoCategory">
     <!-- START CHRISTMAS -->
     <div *ngSwitchCase="'christmas'" class="ega_christmas">
       <mdb-carousel
-        nav-class="red"
-        indicatorClass="red"
         class="carousel slide carousel-fade"
         [animation]="'fade'"
         [interval]="'0'"
@@ -34,5 +30,31 @@
       >
     </div>
     <!-- END CHRISTMAS -->
+    <!-- START THAILAND -->
+    <div *ngSwitchCase="'thailand'" class="ega_thailand">
+      <mdb-carousel
+        class="carousel slide carousel-fade"
+        [animation]="'fade'"
+        [interval]="'0'"
+      >
+        <mdb-carousel-item *ngFor="let image of thailandImages">
+          <div class="view w-100">
+            <a [routerLink]="['/image', image.id]">
+              <img
+                class="d-block w-100"
+                src="{{ image.url }}"
+                alt="First slide"
+              />
+            </a>
+            <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+          </div>
+          <div class="carousel-caption">
+            <h3 class="h3-responsive">{{ image.category }}</h3>
+            <p>{{ image.caption }}</p>
+          </div>
+        </mdb-carousel-item></mdb-carousel
+      >
+    </div>
+    <!-- END THAILAND -->
   </div>
 </div>

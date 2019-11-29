@@ -5,6 +5,16 @@ h1 {
 .ega_sidebar_container {
   margin: 20px;
 }
+.ega_programming_language {
+  display: inline-grid;
+}
+.ega_programming_language h2 {
+  transition: all 0.2s ease-in-out;
+}
+
+.ega_programming_language h2:hover {
+  transform: scale(1.1);
+}
 @media (min-width: 700px) {
   .ega_sidebar_container {
     margin: 100px;
