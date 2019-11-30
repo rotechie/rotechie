@@ -18,7 +18,11 @@ mdb-carousel-item div img {
   border: 1px solid black;
   background-image: none;
 }
-
+.carousel-caption:hover,
+.carousel-indicators:hover {
+  color: black;
+  background: rgba(71, 71, 71, 0.4);
+}
 .carousel-control-next-icon:after {
   content: ">";
   font-size: 55px;
@@ -36,7 +40,7 @@ mdb-carousel-item div img {
 }
 .ega_image_container h2 {
   font-size: 1.5rem;
-  // text-align: center;
+  display: table;
 }
 .ega_photo_side_menu {
   margin: 20px 0px 0px 100px;

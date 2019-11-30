@@ -22,9 +22,12 @@ h2 {
   list-style-type: none;
   grid-gap: 50px;
 }
+.ega_education li {
+  display: grid;
+}
 .ega_education img {
-  margin: 40px 0px;
-  max-width: 100%;
+  margin: 50px auto;
+  max-width: 50%;
 }
 .ega_professional_skills,
 .ega_achievements,

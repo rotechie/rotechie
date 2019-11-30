@@ -16,14 +16,20 @@ export class ThailandGalleryService {
 const ega_thailand_gallery = [
   {
     id: 1,
-    category: "Welder",
-    caption: "Thailand 2012",
+    category: "Thailand",
+    caption: "Welder",
     url: "../assets/images/thailand/welder.jpg"
   },
   {
     id: 2,
-    category: "Pancakes",
-    caption: "Thailand 2012",
+    category: "Thailand",
+    caption: "Pancake Seller",
     url: "../assets/images/thailand/pancake-seller.jpg"
+  },
+  {
+    id: 3,
+    category: "Thailand",
+    caption: "Girl with Blanket",
+    url: "../assets/images/thailand/girl-with-blanket.jpg"
   }
 ];
