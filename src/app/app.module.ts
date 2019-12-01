@@ -28,6 +28,8 @@ import { EventBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-bin
 import { TwoWayBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/two-way-binding/two-way-binding.component";
 import { ImageGalleryComponent } from "./COMPONENTS/STRUCTURAL/image-gallery/image-gallery.component";
 import { SideBarComponent } from "./COMPONENTS/STRUCTURAL/side-bar/side-bar.component";
+import { GardenTableComponent } from "./COMPONENTS/STRUCTURAL/garden-table/garden-table.component";
+import { TableModule } from "ngx-easy-table";
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ import { SideBarComponent } from "./COMPONENTS/STRUCTURAL/side-bar/side-bar.comp
     EventBindingComponent,
     TwoWayBindingComponent,
     ImageGalleryComponent,
-    SideBarComponent
+    SideBarComponent,
+    GardenTableComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +62,8 @@ import { SideBarComponent } from "./COMPONENTS/STRUCTURAL/side-bar/side-bar.comp
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    TableModule
   ],
   providers: [ChristmasCardGalleryService, ThailandGalleryService],
   bootstrap: [AppComponent]

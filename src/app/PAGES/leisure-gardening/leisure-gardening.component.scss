@@ -1,0 +1,31 @@
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.ega_sidebar_container {
+  margin: 20px;
+}
+.ega_gardening_choices {
+  display: table;
+  margin: 40px 0px;
+}
+.ega_gardening_choices h2 {
+  transition: all 0.2s ease-in-out;
+}
+
+.ega_gardening_choices h2:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 700px) {
+  .ega_sidebar_container {
+    margin: 100px;
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+}

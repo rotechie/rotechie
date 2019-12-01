@@ -1,1 +1,25 @@
-<app-nav-bar></app-nav-bar> <app-image-gallery></app-image-gallery>
+<app-nav-bar></app-nav-bar>
+<h1>Gardening Library</h1>
+
+<div class="ega_sidebar_container">
+  <div class="ega_gardening_grid">
+    <div class="ega_gardening_choices">
+      <h2 (click)="gardeningChoices = 'Zone 9 Schedule'">
+        Zone 9B Planting Schedule
+      </h2>
+      <h2 (click)="gardeningChoices = 'Blog'">Blog</h2>
+    </div>
+    <div class="ega_gardening_view">
+      <div [ngSwitch]="gardeningChoices">
+        <div *ngSwitchCase="'Zone 9 Schedule'" class="ega_schedule">
+          <app-garden-table></app-garden-table>
+        </div>
+      </div>
+      <div [ngSwitch]="gardeningChoices">
+        <div *ngSwitchCase="'Blog'" class="ega_blog">
+          This is the blog
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
