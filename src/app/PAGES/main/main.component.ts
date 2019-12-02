@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef, Renderer2 } from "@angular/core";
-
+import { fromEvent, Observable, Subscription } from "rxjs";
 @Component({
   selector: "app-main",
   templateUrl: "./main.component.html",
@@ -7,6 +7,8 @@ import { Component, OnInit, ElementRef, Renderer2 } from "@angular/core";
 })
 export class MainComponent implements OnInit {
   globalListenFunc: Function;
+  resizeObservable$: Observable<Event>;
+  resizeSubscription$: Subscription;
 
   constructor(
     private professional: ElementRef,
@@ -24,25 +26,23 @@ export class MainComponent implements OnInit {
 
     let professional = this.professional.nativeElement;
     let leisure = this.leisure.nativeElement;
-    professional.hidden = true;
-    leisure.hidden = false;
+
+    professional.hidden = false;
+    leisure.hidden = true;
 
     let getWidth = function() {
-      return Math.max(
-        document.body.scrollWidth,
-        document.documentElement.scrollWidth,
-        document.body.offsetWidth,
-        document.documentElement.offsetWidth,
-        document.documentElement.clientWidth
-      );
+      return Math.max(document.body.offsetWidth);
     };
-    getWidth();
+
     var getWidthDivision = getWidth() / 2;
 
-    this.globalListenFunc = this.renderer.listen("document", "mousemove", e => {
-      var mouseX = e.pageX;
+    this.resizeObservable$ = fromEvent(window, "resize");
+    this.resizeSubscription$ = this.resizeObservable$.subscribe(evt => {
+      getWidthDivision = getWidth() / 2;
+    });
 
-      if (mouseX < getWidthDivision) {
+    this.globalListenFunc = this.renderer.listen("document", "mousemove", e => {
+      if (e.pageX < getWidthDivision) {
         professional.hidden = false;
         leisure.hidden = true;
       } else {
@@ -54,5 +54,6 @@ export class MainComponent implements OnInit {
   ngOnDestroy() {
     // remove listener
     this.globalListenFunc();
+    this.resizeSubscription$.unsubscribe();
   }
 }

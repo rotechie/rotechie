@@ -73,6 +73,7 @@ a {
 #ega_backgroundimage_pro img,
 #ega_backgroundimage_lea img {
   width: 100%;
+  transition: all 1.3s;
 }
 @media (max-width: 700px) {
   .ega_main_card_container {
