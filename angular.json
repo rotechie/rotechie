@@ -33,7 +33,6 @@
               "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
               "node_modules/animate.css/animate.css",
               "node_modules/ngx-easy-table/style.css",
-              "node_modules/typeface-montserrat/index.css",
               "src/styles.scss"
             ],
             "scripts": [
@@ -102,7 +101,6 @@
               "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
               "node_modules/animate.css/animate.css",
               "node_modules/ngx-easy-table/style.css",
-              "node_modules/typeface-montserrat/index.css",
               "src/styles.scss"
             ],
             "scripts": [
