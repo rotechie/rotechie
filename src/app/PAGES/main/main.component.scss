@@ -67,13 +67,18 @@ a {
 #ega_backgroundimage_lea {
   width: 300px;
   z-index: 0;
-  // display: none;
+}
+#ega_backgroundimage_pro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "main";
 }
 
 #ega_backgroundimage_pro img,
 #ega_backgroundimage_lea img {
+  grid-area: main;
   width: 100%;
-  transition: all 1.3s;
+  transition: opacity 1s;
 }
 @media (max-width: 700px) {
   .ega_main_card_container {

@@ -27,8 +27,9 @@ export class MainComponent implements OnInit {
     let professional = this.professional.nativeElement;
     let leisure = this.leisure.nativeElement;
 
-    professional.hidden = false;
-    leisure.hidden = true;
+    professional.style.opacity = 1;
+
+    leisure.style.opacity = 0;
 
     let getWidth = function() {
       return Math.max(document.body.offsetWidth);
@@ -43,11 +44,13 @@ export class MainComponent implements OnInit {
 
     this.globalListenFunc = this.renderer.listen("document", "mousemove", e => {
       if (e.pageX < getWidthDivision) {
-        professional.hidden = false;
-        leisure.hidden = true;
+        professional.style.opacity = 1;
+
+        leisure.style.opacity = 0;
       } else {
-        leisure.hidden = false;
-        professional.hidden = true;
+        leisure.style.opacity = 1;
+
+        professional.style.opacity = 0;
       }
     });
   }
