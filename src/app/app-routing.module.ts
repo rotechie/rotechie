@@ -20,6 +20,10 @@ const routes: Routes = [];
         component: ProfessionalProgrammingComponent
       },
       {
+        path: "simbi",
+        component: ProfessionalProgrammingComponent
+      },
+      {
         path: "leisure-programming",
         component: LeisureProgrammingComponent
       },

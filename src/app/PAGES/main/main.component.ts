@@ -49,6 +49,7 @@ export class MainComponent implements OnInit {
         leisure.style.opacity = 0;
       } else {
         leisure.style.opacity = 1;
+        // leisure.style.position = "absolute";
 
         professional.style.opacity = 0;
       }

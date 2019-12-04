@@ -65,7 +65,7 @@ a {
 }
 #ega_backgroundimage_pro,
 #ega_backgroundimage_lea {
-  width: 300px;
+  width: 500px;
   z-index: 0;
 }
 #ega_backgroundimage_pro {
@@ -80,6 +80,9 @@ a {
   width: 100%;
   transition: opacity 1s;
 }
+// .ega_logoman_image_right {
+//   position: absolute;
+// }
 @media (max-width: 700px) {
   .ega_main_card_container {
     grid-template-areas:
