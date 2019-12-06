@@ -1,4 +1,58 @@
-<h2 *ngIf="category == 'all'">
+<div class="ega_programming_container_interview">
+  <div class="ega_main_list_interview">
+    <h2 (click)="typeOfInterview = 'all'" class="ega_tabbed">
+      ALL INTERVIEW QUESTIONS
+    </h2>
+    <h2 (click)="typeOfInterview = 'administration'" class="ega_tabbed">
+      ADMINISTRATION INTERVIEW QUESTIONS
+    </h2>
+
+    <h2 (click)="typeOfInterview = 'scripting'" class="ega_tabbed">
+      SCRIPTING INTERVIEW QUESTIONS
+    </h2>
+
+    <h2 (click)="typeOfInterview = 'training'" class="ega_tabbed">
+      TRAINING INTERVIEW QUESTIONS
+    </h2>
+  </div>
+  <div class="ega_programming_view_interview">
+    <div [ngSwitch]="typeOfInterview">
+      <div *ngSwitchCase="'all'" class="ega_interview_all">
+        <h2>ALL INTERVIEW QUESTIONS</h2>
+        <button type="button" class="btn btn-info ega_start_button">
+          Start
+        </button>
+      </div>
+      <div
+        *ngSwitchCase="'administration'"
+        class="ega_interview_administration"
+      >
+        <h2>ADMINISTRATION INTERVIEW QUESTIONS</h2>
+        <button type="button" class="btn btn-info ega_start_button">
+          Start
+        </button>
+      </div>
+      <div *ngSwitchCase="'scripting'" class="ega_interview_scripting">
+        <h2>SCRIPTING INTERVIEW QUESTIONS</h2>
+        <button type="button" class="btn btn-info ega_start_button">
+          Start
+        </button>
+      </div>
+      <div *ngSwitchCase="'training'" class="ega_interview_training">
+        <h2>TRAINING INTERVIEW QUESTIONS</h2>
+        <button type="button" class="btn btn-info ega_start_button">
+          Start
+        </button>
+      </div>
+      <div *ngSwitchDefault class="ega_placeholder">
+        <span>Select an option on your left.</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END PROGRAMMING VIEW -->
+
+<!-- <h2 *ngIf="category == 'all'">
   {{ sortedInterviewQuestionsAll[0].name }}
 </h2>
 <h2 *ngIf="category == 'scripting'">
@@ -11,4 +65,4 @@
   {{ sortedInterviewQuestionsTraining[0].name }}
 </h2>
 
-<div class="question">Question # {{ snowInterviewQuestions[0].question }}</div>
+<div class="question">Question # {{ snowInterviewQuestions[0].question }}</div> -->

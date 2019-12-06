@@ -8,6 +8,7 @@ h2 {
   grid-template-columns: 1fr 1fr 2fr 1fr;
   grid-template-rows: auto;
   margin-top: 10vh;
+  padding: 20px;
 }
 .ega_qualification_titles {
   grid-area: two;
@@ -18,7 +19,7 @@ h2 {
 }
 .ega_education {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   list-style-type: none;
   grid-gap: 50px;
 }
@@ -28,6 +29,14 @@ h2 {
 .ega_education img {
   margin: 50px auto;
   max-width: 50%;
+}
+.ega_education h2 {
+  text-align: center;
+}
+.ega_education p,
+.ega_education ul,
+.ega_education li p {
+  margin: auto;
 }
 .ega_professional_skills,
 .ega_achievements,
@@ -51,7 +60,7 @@ h2 {
 .ega_qualification_titles h2:hover {
   transform: scale(1.1);
 }
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   .ega_resume_container {
     grid-template-areas:
       "one"
