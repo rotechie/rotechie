@@ -3,6 +3,7 @@
 <h1>Knowledge Library</h1>
 <div class="ega_sidebar_container">
   <div class="ega_programming_language">
+    <h2 (click)="programmingLanguage = 'Snow'">Service Now</h2>
     <h2 (click)="programmingLanguage = 'Angular'">Angular</h2>
     <h2 (click)="programmingLanguage = 'Git'">Git</h2>
   </div>
@@ -14,6 +15,11 @@
   <div [ngSwitch]="programmingLanguage">
     <div *ngSwitchCase="'Git'" class="ega_git">
       <app-git-bash></app-git-bash>
+    </div>
+  </div>
+  <div [ngSwitch]="programmingLanguage">
+    <div *ngSwitchCase="'Snow'" class="ega_snow">
+      <app-service-now></app-service-now>
     </div>
   </div>
 </div>

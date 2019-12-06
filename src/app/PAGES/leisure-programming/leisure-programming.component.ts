@@ -8,6 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class LeisureProgrammingComponent implements OnInit {
   programmingValue: string = "";
   programmingLanguage: string = "";
+  typeOfInterview: string = "";
   constructor() {}
 
   ngOnInit() {}

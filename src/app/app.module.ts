@@ -30,6 +30,8 @@ import { ImageGalleryComponent } from "./COMPONENTS/STRUCTURAL/image-gallery/ima
 import { SideBarComponent } from "./COMPONENTS/STRUCTURAL/side-bar/side-bar.component";
 import { GardenTableComponent } from "./COMPONENTS/STRUCTURAL/garden-table/garden-table.component";
 import { TableModule } from "ngx-easy-table";
+import { ServiceNowComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/service-now/service-now.component';
+import { InterviewQuestionsComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/service-now/interview-questions/interview-questions.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { TableModule } from "ngx-easy-table";
     TwoWayBindingComponent,
     ImageGalleryComponent,
     SideBarComponent,
-    GardenTableComponent
+    GardenTableComponent,
+    ServiceNowComponent,
+    InterviewQuestionsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<h2 *ngIf="category == 'all'">
+  {{ sortedInterviewQuestionsAll[0].name }}
+</h2>
+<h2 *ngIf="category == 'scripting'">
+  {{ sortedInterviewQuestionsScripting[0].name }}
+</h2>
+<h2 *ngIf="category == 'administration'">
+  {{ sortedInterviewQuestionsAdministration[0].name }}
+</h2>
+<h2 *ngIf="category == 'training'">
+  {{ sortedInterviewQuestionsTraining[0].name }}
+</h2>
+
+<div class="question">Question # {{ snowInterviewQuestions[0].question }}</div>

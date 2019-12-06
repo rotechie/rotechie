@@ -1,0 +1,74 @@
+<div class="ega_programming_container">
+  <h2 class="ega_section_title">ALL THINGS SERVICE NOW</h2>
+
+  <!-- START CONTROL VIEW -->
+
+  <div class="ega_main_list">
+    <h2 (click)="programmingValue = 'Interview'">INTERVIEW QUESTIONS</h2>
+
+    <div *ngIf="programmingValue == 'Interview'">
+      <h2 (click)="typeOfInterview = 'all'" class="ega_tabbed">
+        ALL INTERVIEW QUESTIONS
+      </h2>
+      <h2 (click)="typeOfInterview = 'administration'" class="ega_tabbed">
+        ADMINISTRATION INTERVIEW QUESTIONS
+      </h2>
+
+      <h2 (click)="typeOfInterview = 'scripting'" class="ega_tabbed">
+        SCRIPTING INTERVIEW QUESTIONS
+      </h2>
+
+      <h2 (click)="typeOfInterview = 'training'" class="ega_tabbed">
+        TRAINING INTERVIEW QUESTIONS
+      </h2>
+    </div>
+
+    <h2 (click)="programmingValue = 'Business Rules'">BUSINESS RULES</h2>
+  </div>
+
+  <!-- END CONTROL VIEW -->
+
+  <!-- START PROGRAMMING VIEW -->
+
+  <div class="ega_programming_view">
+    <div
+      *ngIf="
+        programmingValue == 'Interview' && programmingValue != 'Business Rules'
+      "
+    >
+      <div [ngSwitch]="typeOfInterview">
+        <div *ngSwitchCase="'all'" class="ega_interview_all">
+          <app-interview-questions [category]="all"></app-interview-questions>
+        </div>
+        <div
+          *ngSwitchCase="'administration'"
+          class="ega_interview_administration"
+        >
+          <app-interview-questions
+            [category]="administration"
+          ></app-interview-questions>
+        </div>
+        <div *ngSwitchCase="'scripting'" class="ega_interview_scripting">
+          <app-interview-questions
+            [category]="scripting"
+          ></app-interview-questions>
+        </div>
+        <div *ngSwitchCase="'training'" class="ega_interview_training">
+          <app-interview-questions
+            [category]="training"
+          ></app-interview-questions>
+        </div>
+        <div *ngSwitchDefault>
+          Select the type of questions you would like the interview to cover
+        </div>
+      </div>
+    </div>
+
+    <div [ngSwitch]="programmingValue">
+      <div *ngSwitchCase="'Business Rules'" class="ega_business_rules">
+        Business rules
+      </div>
+    </div>
+  </div>
+  <!-- END PROGRAMMING VIEW -->
+</div>
