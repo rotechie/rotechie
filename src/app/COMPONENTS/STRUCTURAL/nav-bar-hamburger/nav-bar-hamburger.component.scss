@@ -36,7 +36,7 @@ nav ul li a {
   -moz-transition: all 0.2s linear 0s;
   -webkit-transition: all 0.2s linear 0s;
   -o-transition: all 0.2s linear 0s;
-  font-size: 16px;
+  // font-size: 16px;
 }
 nav ul li a:hover {
   color: #ff7300;
@@ -62,8 +62,15 @@ nav ul li a:hover {
 .fa-bars {
   position: absolute;
   z-index: 999;
+  font-family: "Noto Sans HK", sans-serif;
+  right: 10%;
 }
-
+.fa-bars {
+  font-size: 1rem;
+}
+.fa-bars::before {
+  content: "";
+}
 /*overlay*/
 .overlay {
   position: fixed;
@@ -77,32 +84,32 @@ nav ul li a:hover {
 .wrap {
   color: #e9e9e9;
   text-align: center;
-  max-width: 90%;
+  max-width: 75%;
   margin: 0 auto;
 }
 .wrap ul.wrap-nav {
   border-bottom: 1px solid #575757;
   text-transform: capitalize;
-  padding: 150px 0px 100px;
+  padding: 5% 0 5%;
 }
 .wrap ul.wrap-nav li {
-  font-size: 20px;
+  font-size: 1rem;
   display: inline-block;
   vertical-align: top;
-  width: 24%;
   position: relative;
 }
-.wrap ul.wrap-nav li a {
+.wrap ul.wrap-nav li h2 {
   color: #ff7300;
   display: block;
-  padding: 8px 0;
+  padding: 7% 0 3% 0;
   text-decoration: none;
   transition-property: all 0.2s linear 0s;
   -moz-transition: all 0.2s linear 0s;
   -webkit-transition: all 0.2s linear 0s;
   -o-transition: all 0.2s linear 0s;
+  font-size: 1rem;
 }
-.wrap ul.wrap-nav li a:hover {
+.wrap ul.wrap-nav li h2:hover {
   color: #f0f0f0;
 }
 .wrap ul.wrap-nav ul {
@@ -155,9 +162,11 @@ nav ul li a:hover {
 .social-icon i {
   margin-top: 12px;
 }
-.fa-bars {
-  font-size: smaller;
+
+article {
+  text-align: justify;
 }
+
 @media screen and (max-width: 48em) {
   .wrap ul.wrap-nav > li {
     width: 100%;

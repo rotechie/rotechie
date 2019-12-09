@@ -9,6 +9,10 @@ export class LeisureProgrammingComponent implements OnInit {
   programmingValue: string = "";
   programmingLanguage: string = "";
   typeOfInterview: string = "";
+
+  test() {
+    console.log("hello world");
+  }
   constructor() {}
 
   ngOnInit() {}

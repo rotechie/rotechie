@@ -3,7 +3,7 @@
   (click)="toggle()"
   [style.color]="ega_colorChange()"
 >
-  <i class="fa fa-bars"></i>
+  <i class="fa fa-bars">{{ show == true ? "About" : "Home" }}</i>
   <!-- <a class="btn-open" href="#"></a> -->
 </button>
 <!-- <nav>
@@ -20,48 +20,68 @@
     <div class="wrap">
       <ul class="wrap-nav">
         <li>
-          <a href="#">About</a>
-          <ul>
-            <li><a href="#">About me</a></li>
-            <li>
-              <a routerLink="/resume" routerLinkActive="active">Resume</a>
-            </li>
-            <li><a href="#">References</a></li>
-            <li><a href="#">Hobbies</a></li>
-          </ul>
+          <h2>About</h2>
+
+          <article>
+            <p>
+              Enea Antonicelli was born somewhere in Italy in the winter of
+              1986. The exact date and circumstances of his birth are unknown
+              since he was immediately placed inside a basket and ousted into a
+              river.
+            </p>
+            <p>
+              A young woman noticed the basket one morning while picking berries
+              around the muddy banks of the Tiber. She rescued baby Enea and
+              nursed him using the milk of a badger.
+            </p>
+            <p>
+              Years passed as Enea grew into a young man; developing his many
+              talents along the way. He discovered photography while selling
+              boar sausage along the outskirts of Rome. Roughly around the same
+              time, he began to rescue small kittens and other animals he found
+              along his journies.
+            </p>
+
+            <p>
+              One morning, while nurturing a small mongoose back to health, Enea
+              noticed the rest of the litter looking through his camera’s
+              viewfinder. Curious as to the possibilities, Enea began to teach
+              small animals to operate simple camera controls.
+            </p>
+            <p>
+              Although Enea holds creative credit, many of his images are not
+              actually taken by him.
+            </p>
+          </article>
         </li>
         <li>
-          <a href="#">Portfolio</a>
-          <ul>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Application Development</a></li>
-            <li><a href="#">Graphic Design</a></li>
-            <li><a href="#">Photography</a></li>
-          </ul>
+          <h2>Contact Me</h2>
         </li>
       </ul>
       <div class="social">
-        <a href="#">
+        <a href="https://www.facebook.com/enea.antonicelli">
           <div class="social-icon">
             <i class="fab fa-facebook"></i>
           </div>
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/therotechie/">
           <div class="social-icon">
             <i class="fab fa-instagram"></i>
           </div>
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/in/eneaantonicelli/">
           <div class="social-icon">
             <i class="fab fa-linkedin"></i>
           </div>
         </a>
-        <a href="#">
+        <a href="https://github.com/rotechie">
           <div class="social-icon">
             <i class="fab fa-github"></i>
           </div>
         </a>
-        <a href="#">
+        <a
+          href="https://www.youtube.com/channel/UCUlK52Iuw1UGzz3fpk5dCgw?view_as=subscriber"
+        >
           <div class="social-icon">
             <i class="fab fa-youtube"></i>
           </div>

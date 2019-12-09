@@ -11,7 +11,7 @@
 ol {
   padding: 0;
 }
-.ega_sidebar_container {
+.ega_container {
   margin: 50px;
 }
 .ega_programming_view {
@@ -54,7 +54,7 @@ img {
   .ega_programming_view_interview div div {
     display: grid;
     list-style-type: none;
-    font-size: 16px;
+    font-size: 1rem;
   }
   .ega_interpolations span {
     font-weight: bold;
