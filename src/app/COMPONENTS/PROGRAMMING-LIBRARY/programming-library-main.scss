@@ -1,112 +1,44 @@
-.ega_section_title {
-  text-align: center;
-  margin: 20px;
+ngb-tabset {
+  display: inline-grid;
+  grid-template-columns: 20vw auto;
+  width: 100%;
 }
-.ega_main_list {
-  margin: 50px;
+
+.btn-outline-primary {
+  color: #373737;
+  border-color: #373737;
+  background-color: none;
 }
-.ega_main_list h2 {
+.btn-outline-primary.dropdown-toggle {
+  border-color: #373737;
+  color: #373737;
+}
+.btn-outline-primary:hover {
+  background-color: #373737;
+  color: white;
+}
+.btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(124, 234, 248, 0.51);
+}
+.show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(124, 234, 248, 0.51);
+  border-color: white;
+}
+.show > .btn-outline-primary.dropdown-toggle {
+  background-color: #17a2b8;
+  color: white;
+}
+.dropdown-item:active {
+  background-color: #17a2b8;
+}
+.ega_programming_view_interview h2 {
   font-size: 1rem;
+  padding: 6% 2%;
 }
-ol {
-  padding: 0;
-}
-.ega_container {
-  margin: 50px;
-}
-.ega_programming_view {
-  margin: 20px;
-}
-img {
-  max-width: 75%;
+.ega_programming_view_interview {
   display: grid;
-  margin: auto;
+  grid-template-columns: 20vw auto;
 }
-
-@media (min-width: 700px) {
-  .ega_programming_container {
-    display: grid;
-    grid-template-areas:
-      "header header header header"
-      "one two three four";
-    grid-template-columns: 1fr 2fr 6fr 1fr;
-    grid-auto-rows: minmax(1, auto);
-  }
-  .ega_programming_container_interview {
-    display: grid;
-    grid-template-areas:
-      "header header header header"
-      "one two three four";
-    grid-template-columns: 1fr 9fr;
-    grid-auto-rows: minmax(1, auto);
-  }
-  pre {
-    margin: 0;
-    padding: 20px;
-  }
-  .ega_section_title {
-    grid-area: header;
-    text-align: center;
-    margin-bottom: 5vh;
-  }
-
-  .ega_programming_view div div,
-  .ega_programming_view_interview div div {
-    display: grid;
-    list-style-type: none;
-    font-size: 1rem;
-  }
-  .ega_interpolations span {
-    font-weight: bold;
-    color: blue;
-  }
-  .ega_main_list {
-    grid-area: two;
-  }
-  .ega_main_list_interview {
-    grid-area: one;
-  }
-
-  .ega_programming_view {
-    grid-row-start: 1;
-    grid-area: three;
-  }
-  .ega_programming_view_interview {
-    grid-row-start: 1;
-    grid-area: two;
-  }
-  .ega_main_list h2,
-  .ega_main_list_interview h2 {
-    font-size: 20px;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .ega_main_list h2:hover,
-  .ega_main_list_interview h2:hover {
-    transform: scale(1.1);
-  }
-  .ega_codeImage {
-    max-width: 500px;
-  }
-  .ega_interpolations ol li {
-    margin: 20px;
-  }
-  .bold {
-    font-weight: bold;
-  }
-  .ega_tabbed {
-    padding: 30px;
-    border-bottom: 1px solid black;
-  }
-  .ega_placeholder,
-  .ega_programming_view_interview h2 {
-    text-align: center;
-    margin-top: -50px;
-    color: gray;
-  }
-  .ega_programming_view_interview button {
-    width: 100px;
-    display: grid;
-    justify-self: center;
-  }
+.ega_main_list_interview {
+  padding: 3%;
 }

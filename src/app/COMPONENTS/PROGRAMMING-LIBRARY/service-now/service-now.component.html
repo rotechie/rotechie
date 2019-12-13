@@ -1,24 +1,20 @@
-<!-- <h2 class="ega_section_title">ALL THINGS SERVICE NOW</h2> -->
-<div class="ega_programming_container">
-  <!-- START CONTROL VIEW -->
-
-  <div class="ega_main_list">
-    <div>
-      <h2 (click)="programmingValue = 'Interview'">INTERVIEW QUESTIONS</h2>
-    </div>
-    <div>
-      <h2 (click)="programmingValue = 'Business Rules'">BUSINESS RULES</h2>
-    </div>
-  </div>
-  <div class="ega_programming_view">
-    <div *ngIf="programmingValue == 'Interview'">
+<ngb-tabset [orientation]="vertical" class="ega_tab_container">
+  <ngb-tab title="" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content"> </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Interview Questions" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content">
       <app-interview-questions></app-interview-questions>
-    </div>
-    <div *ngIf="programmingValue == 'Business Rules'">
-      Business rules!
-      <!-- <app-business-rules></app-business-rules> -->
-    </div>
-  </div>
-
-  <!-- END CONTROL VIEW -->
-</div>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Business Rules" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content">
+      BUSINESS RULES</ng-template
+    >
+  </ngb-tab>
+  <ngb-tab title="Client Scripts" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content">
+      CLIENT SCRIPTS</ng-template
+    >
+  </ngb-tab>
+</ngb-tabset>

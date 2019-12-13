@@ -1,68 +1,96 @@
 <div class="ega_programming_container_interview">
   <div class="ega_main_list_interview">
-    <h2 (click)="typeOfInterview = 'all'" class="ega_tabbed">
-      ALL INTERVIEW QUESTIONS
-    </h2>
-    <h2 (click)="typeOfInterview = 'administration'" class="ega_tabbed">
-      ADMINISTRATION INTERVIEW QUESTIONS
-    </h2>
-
-    <h2 (click)="typeOfInterview = 'scripting'" class="ega_tabbed">
-      SCRIPTING INTERVIEW QUESTIONS
-    </h2>
-
-    <h2 (click)="typeOfInterview = 'training'" class="ega_tabbed">
-      TRAINING INTERVIEW QUESTIONS
-    </h2>
-  </div>
-  <div class="ega_programming_view_interview">
-    <div [ngSwitch]="typeOfInterview">
-      <div *ngSwitchCase="'all'" class="ega_interview_all">
-        <h2>ALL INTERVIEW QUESTIONS</h2>
-        <button type="button" class="btn btn-info ega_start_button">
-          Start
-        </button>
-      </div>
-      <div
-        *ngSwitchCase="'administration'"
-        class="ega_interview_administration"
+    <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+      <button
+        class="btn btn-outline-primary mr-2"
+        id="dropdownManual"
+        ngbDropdownAnchor
+        (focus)="myDrop.open()"
       >
-        <h2>ADMINISTRATION INTERVIEW QUESTIONS</h2>
-        <button type="button" class="btn btn-info ega_start_button">
-          Start
+        Category of Questions
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownManual">
+        <button ngbDropdownItem (click)="typeOfInterview = 'all'">
+          ALL INTERVIEW QUESTIONS
+        </button>
+        <button ngbDropdownItem (click)="typeOfInterview = 'administration'">
+          ADMINISTRATION INTERVIEW QUESTIONS
+        </button>
+        <button ngbDropdownItem (click)="typeOfInterview = 'scripting'">
+          SCRIPTING INTERVIEW QUESTIONS
+        </button>
+        <button ngbDropdownItem (click)="typeOfInterview = 'training'">
+          TRAINING INTERVIEW QUESTIONS
         </button>
       </div>
-      <div *ngSwitchCase="'scripting'" class="ega_interview_scripting">
-        <h2>SCRIPTING INTERVIEW QUESTIONS</h2>
-        <button type="button" class="btn btn-info ega_start_button">
-          Start
-        </button>
+    </div>
+    <div class="ega_programming_view_interview">
+      <div [ngSwitch]="typeOfInterview">
+        <div *ngSwitchCase="'all'" class="ega_interview_all">
+          <h2>ALL INTERVIEW QUESTIONS</h2>
+          <button
+            (click)="category = 'all'"
+            type="button"
+            class="btn btn-info ega_start_button"
+          >
+            Start
+          </button>
+        </div>
+        <div
+          *ngSwitchCase="'administration'"
+          class="ega_interview_administration"
+        >
+          <h2>ADMINISTRATION INTERVIEW QUESTIONS</h2>
+          <button
+            (click)="category = 'administration'"
+            type="button"
+            class="btn btn-info ega_start_button"
+          >
+            Start
+          </button>
+        </div>
+        <div *ngSwitchCase="'scripting'" class="ega_interview_scripting">
+          <h2>SCRIPTING INTERVIEW QUESTIONS</h2>
+          <button
+            (click)="category = 'scripting'"
+            type="button"
+            class="btn btn-info ega_start_button"
+          >
+            Start
+          </button>
+        </div>
+        <div *ngSwitchCase="'training'" class="ega_interview_training">
+          <h2>TRAINING INTERVIEW QUESTIONS</h2>
+          <button
+            (click)="category = 'training'"
+            type="button"
+            class="btn btn-info ega_start_button"
+          >
+            Start
+          </button>
+        </div>
+        <div *ngSwitchDefault class="ega_placeholder">
+          <!-- <span>Select an option.</span> -->
+        </div>
       </div>
-      <div *ngSwitchCase="'training'" class="ega_interview_training">
-        <h2>TRAINING INTERVIEW QUESTIONS</h2>
-        <button type="button" class="btn btn-info ega_start_button">
-          Start
-        </button>
-      </div>
-      <div *ngSwitchDefault class="ega_placeholder">
-        <span>Select an option on your left.</span>
+      <div>
+        <div *ngIf="category == 'all' && typeOfInterview == 'all'">
+          {{ sortedInterviewQuestionsAll[2].name }}
+        </div>
+        <div
+          *ngIf="
+            category == 'administration' && typeOfInterview == 'administration'
+          "
+        >
+          {{ sortedInterviewQuestionsAll[0].name }}
+        </div>
+        <div *ngIf="category == 'scripting' && typeOfInterview == 'scripting'">
+          {{ sortedInterviewQuestionsAll[1].name }}
+        </div>
+        <div *ngIf="category == 'training' && typeOfInterview == 'training'">
+          {{ sortedInterviewQuestionsAll[3].name }}
+        </div>
       </div>
     </div>
   </div>
 </div>
-<!-- END PROGRAMMING VIEW -->
-
-<!-- <h2 *ngIf="category == 'all'">
-  {{ sortedInterviewQuestionsAll[0].name }}
-</h2>
-<h2 *ngIf="category == 'scripting'">
-  {{ sortedInterviewQuestionsScripting[0].name }}
-</h2>
-<h2 *ngIf="category == 'administration'">
-  {{ sortedInterviewQuestionsAdministration[0].name }}
-</h2>
-<h2 *ngIf="category == 'training'">
-  {{ sortedInterviewQuestionsTraining[0].name }}
-</h2>
-
-<div class="question">Question # {{ snowInterviewQuestions[0].question }}</div> -->
