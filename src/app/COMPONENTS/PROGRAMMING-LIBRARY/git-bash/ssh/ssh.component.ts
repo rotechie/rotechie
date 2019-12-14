@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-two-way-binding",
-  templateUrl: "./two-way-binding.component.html",
+  selector: "app-ssh",
+  templateUrl: "./ssh.component.html",
   styleUrls: ["../../programming-library-main.scss"]
 })
-export class TwoWayBindingComponent implements OnInit {
+export class SshComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}

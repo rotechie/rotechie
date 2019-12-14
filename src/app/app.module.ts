@@ -33,6 +33,7 @@ import { TableModule } from "ngx-easy-table";
 import { ServiceNowComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/service-now/service-now.component";
 import { InterviewQuestionsComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/service-now/interview-questions/interview-questions.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { SshComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/git-bash/ssh/ssh.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     SideBarComponent,
     GardenTableComponent,
     ServiceNowComponent,
-    InterviewQuestionsComponent
+    InterviewQuestionsComponent,
+    SshComponent
   ],
   imports: [
     BrowserModule,

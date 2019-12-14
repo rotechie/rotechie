@@ -4,16 +4,7 @@
   [style.color]="ega_colorChange()"
 >
   <i class="fa fa-bars">{{ show == true ? "About" : "Home" }}</i>
-  <!-- <a class="btn-open" href="#"></a> -->
 </button>
-<!-- <nav>
-  <ul>
-    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Work</a></li>
-  </ul>
-</nav> -->
 <ng-container *ngIf="!show">
   <div class="overlay" [@fadeInOut]>
     <!--Animation trigger-->

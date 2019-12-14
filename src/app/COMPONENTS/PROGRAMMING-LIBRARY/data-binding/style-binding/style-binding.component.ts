@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-style-binding',
-  templateUrl: './style-binding.component.html',
-  styleUrls: ['./style-binding.component.scss']
+  selector: "app-style-binding",
+  templateUrl: "./style-binding.component.html",
+  styleUrls: ["../../programming-library-main.scss"]
 })
 export class StyleBindingComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

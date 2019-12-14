@@ -1,87 +1,20 @@
-<div class="ega_programming_container">
-  <h2 class="ega_section_title">GIT COMMANDS</h2>
-  <div class="ega_main_list">
-    <h2 (click)="programmingValue = 'SSH Cloning'">SSH Keys and Cloning</h2>
-    <h2 (click)="programmingValue = 'Http Cloning'">Http Cloning</h2>
-  </div>
-  <div class="ega_programming_view">
-    <div [ngSwitch]="programmingValue">
-      <div *ngSwitchCase="'SSH Cloning'" class="ega_ssh_cloning">
-        <div>
-          <h2>SSH KEYS AND CLONING</h2>
-          <br />
-          <p>
-            SSH (Secure Shell) keys are an access credential that is used in the
-            SSH protocol.
-          </p>
-          <p>
-            An SSH key is either one of two files used in an authentication
-            method known as SSH public key authentication. In this
-            authentication method, one file (known as the private key) is
-            typically held at the client side and the other file (known as the
-            public key) is stored at the server side. Github stores the public
-            key in this case and the user stores the private key.
-          </p>
-          <p>
-            In order to set up an SSH connection, you must first generate a
-            local key. This is done using a terminal. In this case, we are
-            working with Git Bash.
-          </p>
-          <p>Type the following in your terminal:</p>
-          <p><span class="bold">ssh-keygen</span></p>
-          <p>The following will appear:</p>
-          <!-- prettier-ignore -->
-          <pre>
-                $ ssh-keygen
-                Generating public/private rsa key pair.
-                Enter file in which to save the key (/c/Users/username/.ssh/id_rsa):
-          </pre>
-          <p>
-            If you would like to opt for the default file location, hit Enter.
-          </p>
-          <p>
-            Enter a password or hit Enter again if you do not wish to use a
-            password. You will need to reenter it for validation.
-          </p>
-          <p style="color: rgb(0, 146, 0);" class="bold">
-            Your key has now been generated.
-          </p>
-
-          <p>Navigate to: <span class="bold">C:\Users\eneaa\.ssh</span></p>
-          <p>Open the file called: <span class="bold">id_rsa</span></p>
-          <p>
-            The key is quite long so ensure you copy all of it. The file/key you
-            will copy it from should look like this:
-          </p>
-          <img
-            src="../../../../assets/images/programming-library/id_rsa.jpg"
-            alt="SSH key screenshot"
-          />
-          <p>
-            Navigate to your github account settings.
-            <span class="bold">Select the SSH and GPG keys option.</span>
-          </p>
-          <img
-            src="../../../../assets/images/programming-library/github_ssh.jpg"
-            alt="SSH key screenshot"
-          />
-          <p>Enter your key's name and paste the key in the appropriate box.</p>
-          <p>Hit the green<span class="bold"> Add SSH Key button</span></p>
-          <p>
-            Your key has been added to GitHub and you should now be able to push
-            to master
-          </p>
-          <img
-            src="../../../../assets/images/programming-library/github_ssh_entered.jpg"
-            alt="SSH key screenshot"
-          />
-        </div>
-      </div>
-    </div>
-    <div [ngSwitch]="programmingValue">
-      <div *ngSwitchCase="'Http Cloning'" class="ega_http_cloning">
-        asdkaskldjalksdjaskjdasjdlasdas
-      </div>
-    </div>
-  </div>
-</div>
+<ngb-tabset [orientation]="vertical" class="ega_tab_container">
+  <ngb-tab title="" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content"> </ng-template>
+  </ngb-tab>
+  <ngb-tab title="SSH key and Cloning" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content">
+      <app-ssh></app-ssh>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="HTTP Cloning" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content">
+      http cloning</ng-template
+    >
+  </ngb-tab>
+  <ngb-tab title="Client Scripts" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content">
+      CLIENT SCRIPTS</ng-template
+    >
+  </ngb-tab>
+</ngb-tabset>
