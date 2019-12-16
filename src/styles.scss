@@ -85,7 +85,6 @@ body {
   font-weight: normal;
   margin: 0;
   padding: 0;
-
   @media #{$mq-medium} {
     font-size: $base-font-size * 1;
     line-height: $base-line-height * 1;

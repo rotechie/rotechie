@@ -2,61 +2,16 @@
 <app-nav-bar></app-nav-bar>
 <h1>Gardening Library</h1>
 <ngb-tabset>
-  <ngb-tab title="Zone 9B Planting Schedule">
-    <ng-template ngbTabContent>
-      <div class="ega_container">
-        <p class="ega_hardiness_info">
-          A <span>hardiness zone</span> is a geographically-defined
-          <span>zone</span> in which a specific category of plant life is
-          capable of growing, as defined by temperature <span>hardiness</span>,
-          or ability to withstand the minimum temperatures of the
-          <span>zone</span>.
-        </p>
-        <img src="../../../assets/images/hardinesszones.jpg" alt="" />
-        <p>
-          Sacramento is located in zone <span>9B</span>. This means that the
-          lowest temperatures recorded from 1976 through 2005, ranged from 25
-          &#8457; to 30 &#8457;.
-        </p>
-        <p>
-          The <span>first Fall frost</span> occurs around the
-          <span>26th of November </span>; while the
-          <span>last Spring frost</span> occurs around
-          <span>February 21st</span>.
-        </p>
-        <p>
-          The following table allows you to search for a vegetable in order to
-          find the most appropriate time to sow your seeds or plant your
-          seedlings.
-        </p>
-        <p><span>Environment:</span></p>
-        <ul>
-          <li>
-            <span>Sow outdoors:</span> Sow seeds directly into the ground
-            outside and without cover.
-          </li>
-          <li>
-            <span>Sow indoors:</span> Sow seeds indoors either on a window sill,
-            inside a greenhouse, or under lights.
-          </li>
-          <li>
-            <span>Sow undercover:</span> Sow seeds outdoors but under the
-            protection of a fleece.
-          </li>
-        </ul>
-        <p>
-          Transplanting of seedlings does not have a specific date tied to it.
-          This task should be done once the seedlings reach the appropriate
-          maturity level. This is variable based on growing conditions. At least
-          two inches of plant growth is advised prior to transplanting however.
-        </p>
-      </div>
-      <app-garden-table></app-garden-table>
-    </ng-template>
-  </ngb-tab>
   <ngb-tab title="Blog">
     <ng-template ngbTabContent>
-      <p>Blog Placeholder</p>
+      <div class="ega_container">
+        <p>Blog Placeholder</p>
+      </div>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Zone 9B Planting Schedule">
+    <ng-template ngbTabContent>
+      <app-planting-schedule></app-planting-schedule>
     </ng-template>
   </ngb-tab>
 </ngb-tabset>
