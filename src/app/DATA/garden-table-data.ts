@@ -4,42 +4,48 @@ export interface Vegetable {
   family: string;
   variety: string;
   isActive: boolean;
-  sowdate?: string;
+  firstsowdate?: string;
   lastsowdate?: string;
+  sowlocation?: string;
   imgUrl?: string;
 }
 
 export const columns: Columns[] = [
   { key: "family", title: "Family" },
   { key: "variety", title: "Variety" },
-  { key: "sowdate", title: "Sow in" },
-  { key: "lastsowdate", title: "Last month to sow" },
-  { key: "isActive", title: "Active" }
+  { key: "firstsowdate", title: "First Sow Date" },
+  { key: "lastsowdate", title: "Last Sow Date" },
+  { key: "environment", title: "Environment" },
+  { key: "isActive", title: "Planted" }
+  // { key: "imgUrl", title: "Image" }
 ];
 
 export const data = [
   {
     imgUrl: "https://i.imgur.com/GLqxxnn.png",
-    family: "Tomato",
+    family: "Lettuce",
     variety: "Cherokee Purple",
-    sowdate: "March",
-    lastsowdate: "May",
+    firstsowdate: "February",
+    lastsowdate: "December",
+    environment: "Sow undercover",
     isActive: false
   },
   {
     imgUrl: "https://i.imgur.com/GLqxxnn.png",
     family: "Eggplant",
     variety: "Sungold",
-    sowdate: "March",
+    firstsowdate: "March",
     lastsowdate: "May",
+    environment: "Sow indoors",
     isActive: false
   },
   {
     imgUrl: "https://i.imgur.com/GLqxxnn.png",
     family: "Kale",
     variety: "Cherokee Purple",
-    sowdate: "March",
+    firstsowdate: "March",
     lastsowdate: "August",
+    environment: "Sow outdoors",
     isActive: false
   },
 
@@ -47,7 +53,7 @@ export const data = [
     imgUrl: "https://i.imgur.com/GLqxxnn.png",
     family: "Onion",
     variety: "Cherokee Purple",
-    sowdate: "March",
+    firstsowdate: "March",
     lastsowdate: "May",
     isActive: false
   },
@@ -55,7 +61,7 @@ export const data = [
     imgUrl: "https://i.imgur.com/GLqxxnn.png",
     family: "Garlic",
     variety: "Cherokee Purple",
-    sowdate: "September",
+    firstsowdate: "September",
     lastsowdate: "June",
     isActive: false
   },
@@ -63,7 +69,7 @@ export const data = [
     imgUrl: "https://i.imgur.com/GLqxxnn.png",
     family: "Leeks",
     variety: "Cherokee Purple",
-    sowdate: "March",
+    firstsowdate: "March",
     lastsowdate: "July",
     isActive: false
   },
@@ -71,7 +77,7 @@ export const data = [
     imgUrl: "https://i.imgur.com/GLqxxnn.png",
     family: "Broccoli",
     variety: "Cherokee Purple",
-    sowdate: "April",
+    firstsowdate: "April",
     lastsowdate: "August",
     isActive: false
   }

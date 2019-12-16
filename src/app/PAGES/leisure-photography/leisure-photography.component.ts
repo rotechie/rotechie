@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { ChristmasCardGalleryService } from "../../SERVICES/christmas-card-gallery.service";
+import { ThailandGalleryService } from "../../SERVICES/thailand-gallery.service";
 
 @Component({
   selector: "app-leisure-photography",
@@ -6,7 +8,17 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./leisure-photography.component.scss"]
 })
 export class LeisurePhotographyComponent implements OnInit {
-  constructor() {}
+  title = "Christmas Pics";
+  photoCategory: string = "";
+  christmasImages: any[] = [];
+  thailandImages: any[] = [];
+  constructor(
+    private ChristmasCardGalleryService: ChristmasCardGalleryService,
+    private ThailandGalleryService: ThailandGalleryService
+  ) {
+    this.christmasImages = this.ChristmasCardGalleryService.getImages();
+    this.thailandImages = this.ThailandGalleryService.getImages();
+  }
 
   ngOnInit() {
     const imgContent = document.querySelectorAll(".img-content-hover");
@@ -19,5 +31,9 @@ export class LeisurePhotographyComponent implements OnInit {
     }
 
     document.addEventListener("mousemove", showImgContent);
+  }
+  ngOnChanges() {
+    this.christmasImages = this.ChristmasCardGalleryService.getImages();
+    this.thailandImages = this.ThailandGalleryService.getImages();
   }
 }

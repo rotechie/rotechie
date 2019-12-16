@@ -1,25 +1,12 @@
-h1 {
-  font-size: 20px;
-  text-align: center;
+.ega_hardiness_info {
+  padding: 1% 3%;
 }
-h2 {
-  font-size: 1.5rem;
+.ega_container span {
+  font-weight: bold;
 }
-.ega_sidebar_container {
-  margin: 20px;
+.ega_container img {
+  width: 100%;
 }
-.ega_gardening_choices {
-  display: table;
-  margin: 40px 0px;
-}
-.ega_gardening_choices h2 {
-  transition: all 0.2s ease-in-out;
-}
-
-.ega_gardening_choices h2:hover {
-  transform: scale(1.1);
-}
-
 @media (min-width: 700px) {
   .ega_sidebar_container {
     margin: 100px;

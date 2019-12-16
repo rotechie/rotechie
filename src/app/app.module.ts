@@ -16,7 +16,6 @@ import { ProfessionalProgrammingComponent } from "./PAGES/professional-programmi
 import { LeisureProgrammingComponent } from "./PAGES/leisure-programming/leisure-programming.component";
 import { LeisureGardeningComponent } from "./PAGES/leisure-gardening/leisure-gardening.component";
 import { LeisurePhotographyComponent } from "./PAGES/leisure-photography/leisure-photography.component";
-import { ImageSliderComponent } from "./COMPONENTS/STRUCTURAL/image-slider/image-slider.component";
 import { PropertyBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/property-binding/property-binding.component";
 import { GitBashComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/git-bash/git-bash.component";
 import { DataBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/data-binding.component";
@@ -33,7 +32,7 @@ import { TableModule } from "ngx-easy-table";
 import { ServiceNowComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/service-now/service-now.component";
 import { InterviewQuestionsComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/service-now/interview-questions/interview-questions.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { SshComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/git-bash/ssh/ssh.component';
+import { SshComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/git-bash/ssh/ssh.component";
 
 @NgModule({
   declarations: [
@@ -46,7 +45,6 @@ import { SshComponent } from './COMPONENTS/PROGRAMMING-LIBRARY/git-bash/ssh/ssh.
     LeisureProgrammingComponent,
     LeisureGardeningComponent,
     LeisurePhotographyComponent,
-    ImageSliderComponent,
     PropertyBindingComponent,
     GitBashComponent,
     DataBindingComponent,

@@ -1,3 +1,69 @@
 <app-nav-bar-hamburger></app-nav-bar-hamburger>
 <app-nav-bar></app-nav-bar>
-<app-image-slider></app-image-slider>
+
+<ngb-tabset [orientation]="vertical" class="ega_tab_container">
+  <ngb-tab title="" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content ega_empty_template">
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab
+    title="Christmas Cards"
+    (click)="photoCategory = 'christmas'"
+    class="ega_tab"
+  >
+    <ng-template ngbTabContent class="ega_tab_content">
+      <mdb-carousel
+        class="carousel slide carousel-fade"
+        [animation]="'fade'"
+        [interval]="'0'"
+      >
+        <mdb-carousel-item *ngFor="let image of christmasImages">
+          <div class="view w-100">
+            <a [routerLink]="['/image', image.id]">
+              <div class="ega_image_and_caption_container">
+                <img
+                  class="d-block w-100"
+                  src="{{ image.url }}"
+                  alt="First slide"
+                />
+                <div class="carousel-caption">
+                  <!-- <h3 class="h3-responsive">{{ image.category }}</h3> -->
+                  <!-- <p>{{ image.caption }}</p> -->
+                </div>
+              </div>
+            </a>
+            <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+          </div> </mdb-carousel-item
+      ></mdb-carousel>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Thailand" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content">
+      <mdb-carousel
+        class="carousel slide carousel-fade"
+        [animation]="'fade'"
+        [interval]="'0'"
+      >
+        <mdb-carousel-item *ngFor="let image of thailandImages">
+          <div class="view w-100">
+            <a [routerLink]="['/image', image.id]">
+              <img
+                class="d-block w-100"
+                src="{{ image.url }}"
+                alt="First slide"
+              />
+            </a>
+            <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+          </div>
+          <div class="carousel-caption">
+            <!-- <h3 class="h3-responsive">{{ image.category }}</h3> -->
+            <!-- <p>{{ image.caption }}</p> -->
+          </div>
+        </mdb-carousel-item></mdb-carousel
+      ></ng-template
+    >
+  </ngb-tab>
+  <ngb-tab title="Italy" class="ega_tab">
+    <ng-template ngbTabContent class="ega_tab_content"> Italy</ng-template>
+  </ngb-tab>
+</ngb-tabset>

@@ -1,4 +1,3 @@
-import { ImageSliderComponent } from "./COMPONENTS/STRUCTURAL/image-slider/image-slider.component";
 import { MainComponent } from "./PAGES/main/main.component";
 import { ResumeComponent } from "./PAGES/professional-resume/professional-resume.component";
 import { ProfessionalProgrammingComponent } from "./PAGES/professional-programming/professional-programming.component";
@@ -35,8 +34,7 @@ const routes: Routes = [];
         path: "leisure-photography",
         component: LeisurePhotographyComponent
       },
-      { path: "home", component: MainComponent },
-      { path: "image/:id", component: ImageSliderComponent }
+      { path: "home", component: MainComponent }
     ])
   ],
   exports: [RouterModule]

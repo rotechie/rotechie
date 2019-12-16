@@ -29,11 +29,52 @@ $header-line-height: 1.25;
   --theme-orange: rgb(255, 94, 0);
   --theme-light-teal: rgba(124, 234, 248, 0.51);
   --theme-charcoal: #373737;
+  --theme-transparent-grey: #8a8a8a1e;
   --theme-teal: #17a2b8;
+  // START -- Over rides for high specificity node_module styles
 
-  ngb-tabset > ul > li > a {
-    color: var(--theme-orange);
+  .ngx-menu {
+    padding: 0;
+    text-align: center;
   }
+  .ngx-pagination-range-dropdown-button {
+    width: max-content;
+  }
+  .ngx-pagination-range-dropdown-button-item:hover {
+    background-color: var(--theme-transparent-grey);
+  }
+  ngb-tabset div,
+  ngb-tabset {
+    padding: 0 1%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+  ngb-tabset > ul > li > a {
+    color: var(--theme-charcoal);
+  }
+  .ngx-pagination-range-dropdown-button {
+    padding: 0;
+  }
+  ol.carousel-indicators li.ng-star-inserted {
+    display: none;
+  }
+  .ega_tab_container > ul > li:nth-child(1) > a {
+    border: none !important;
+  }
+  ngb-tabset > ul > li {
+    font-weight: bold;
+  }
+  span.carousel-control-next-icon {
+    background-image: url(./assets/images/arrow_right_grey.svg) !important;
+  }
+  span.carousel-control-prev-icon {
+    background-image: url(./assets/images/arrow_left_grey.svg) !important;
+  }
+}
+@media (min-width: 64em) {
+  // END -- Over rides for high specificity node_module styles
 }
 :host,
 body {
@@ -41,7 +82,7 @@ body {
   line-height: $base-line-height;
   // font-family: "Nunito", sans-serif;
   font-family: "Noto Sans HK", sans-serif;
-  font-weight: 600;
+  font-weight: normal;
   margin: 0;
   padding: 0;
 
