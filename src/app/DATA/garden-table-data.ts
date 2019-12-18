@@ -13,9 +13,11 @@ export interface Vegetable {
 export const columns: Columns[] = [
   { key: "family", title: "Family" },
   { key: "variety", title: "Variety" },
-  { key: "firstsowdate", title: "First Sow Date" },
-  { key: "lastsowdate", title: "Last Sow Date" },
-  { key: "environment", title: "Environment" },
+  { key: "sowindoors", title: "Sow Indoors" },
+  { key: "sowoutdoors", title: "Sow Outdoors" },
+  { key: "lastsow", title: "Last Sowing" },
+  { key: "sunexposure", title: "Sun Exposure" },
+  { key: "soilph", title: "Soil pH" },
   { key: "isActive", title: "Planted" }
   // { key: "imgUrl", title: "Image" }
 ];
@@ -24,19 +26,23 @@ export const data = [
   {
     imgUrl: "https://i.imgur.com/GLqxxnn.png",
     family: "Lettuce",
-    variety: "Cherokee Purple",
-    firstsowdate: "February",
-    lastsowdate: "December",
-    environment: "Sow undercover",
+    variety: "Red Leaf",
+    sowindoors: "Mid January",
+    sowoutdoors: "Late February",
+    lastsow: "Early October",
+    sunexposure: "Partly Sunny",
+    soilph: "6-7",
     isActive: false
   },
   {
     imgUrl: "https://i.imgur.com/GLqxxnn.png",
-    family: "Eggplant",
-    variety: "Sungold",
-    firstsowdate: "March",
-    lastsowdate: "May",
-    environment: "Sow indoors",
+    family: "Lettuce",
+    variety: "Red Leaf",
+    sowindoors: "Mid January",
+    sowoutdoors: "Late February",
+    lastsow: "Early October",
+    sunexposure: "Partly Sunny",
+    soilph: "6-7",
     isActive: false
   },
   {

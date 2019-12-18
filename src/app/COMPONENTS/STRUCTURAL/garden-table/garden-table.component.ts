@@ -8,18 +8,26 @@ import { Vegetable, data } from "../../../DATA/garden-table-data";
   styleUrls: ["./garden-table.component.scss"]
 })
 export class GardenTableComponent implements OnInit {
+  public modal: boolean;
+  public selected: any;
   public configurationAdvanced: Config;
   public columns: Columns[];
   public data: Vegetable[] = [];
 
   ngOnInit(): void {
+    this.modal = false;
+    console.log(this);
+    this.selected;
     this.columns = [
       { key: "family", title: "Family" },
       { key: "variety", title: "Variety" },
-      { key: "firstsowdate", title: "First Sow Date" },
-      { key: "lastsowdate", title: "Last Sow Date" },
-      { key: "environment", title: "Environment" },
-      { key: "isActive", title: "Planted" }
+      { key: "sowindoors", title: "Sow Indoors" },
+      { key: "sowoutdoors", title: "Sow Outdoors" },
+      { key: "lastsow", title: "Last Sowing" },
+      { key: "sunexposure", title: "Sun Exposure" },
+      { key: "soilph", title: "Soil pH" },
+      { key: "isActive", title: "STATUS" }
+
       // { key: "imgUrl", title: "Image" }
     ];
 
@@ -29,5 +37,18 @@ export class GardenTableComponent implements OnInit {
     this.configurationAdvanced.threeWaySort = true;
     this.configurationAdvanced.rows = 4;
     this.data = data;
+  }
+  onEvent(event: { event: string; value: any }): void {
+    this.selected = JSON.stringify(event.value.row, null, 2);
+    // console.log(event.value.row, null, 2);
+  }
+
+  showModal(): void {
+    alert("suck my ass");
+    this.modal = true;
+  }
+
+  hideModal(): void {
+    this.modal = false;
   }
 }
