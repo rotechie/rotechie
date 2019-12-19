@@ -8,15 +8,16 @@ import { Vegetable, data } from "../../../DATA/garden-table-data";
   styleUrls: ["./garden-table.component.scss"]
 })
 export class GardenTableComponent implements OnInit {
-  public modal: boolean;
-  public selected: any;
+  public modal: boolean = false;
+  public modalTitle: any;
+  public modalImage: any;
+  public modalBody: String;
   public configurationAdvanced: Config;
   public columns: Columns[];
   public data: Vegetable[] = [];
 
   constructor() {
-    this.modal = false;
-    this.selected;
+    // this.modal = false;
     this.columns = [
       { key: "family", title: "Family" },
       { key: "variety", title: "Variety" },
@@ -37,11 +38,16 @@ export class GardenTableComponent implements OnInit {
     this.configurationAdvanced.rows = 4;
     this.data = data;
   }
+
   onEvent(event: { event: string; value: any }): void {
-    this.selected = JSON.stringify(event.value.row, null, 2);
+    let row = event.value.row;
+
+    this.modalTitle = row.variety + " " + row.family;
+    this.modalImage = row.imgUrl;
+    this.modalBody = row.info;
   }
 
-  toggleModal(): void {
+  openModal(): void {
     if ("this.modal === 'false'") {
       this.modal = true;
     } else {

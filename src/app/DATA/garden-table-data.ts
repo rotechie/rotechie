@@ -24,7 +24,9 @@ export const columns: Columns[] = [
 
 export const data = [
   {
-    imgUrl: "https://i.imgur.com/GLqxxnn.png",
+    imgUrl: "../assets/images/vegetables/redleaflettuce.jpg",
+    info:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur beatae dolorum minus, non voluptas minima voluptatum odit, dignissimos cumque doloribus illum temporibus possimus. Similique voluptatibus corporis vel, eius ipsa eveniet ad possimus. Quia, voluptates sunt adipisci ratione atque perferendis?",
     family: "Lettuce",
     variety: "Red Leaf",
     sowindoors: "Mid January",
@@ -35,23 +37,29 @@ export const data = [
     isActive: false
   },
   {
-    imgUrl: "https://i.imgur.com/GLqxxnn.png",
-    family: "Lettuce",
-    variety: "Red Leaf",
-    sowindoors: "Mid January",
-    sowoutdoors: "Late February",
-    lastsow: "Early October",
-    sunexposure: "Partly Sunny",
-    soilph: "6-7",
-    isActive: false
-  },
-  {
-    imgUrl: "https://i.imgur.com/GLqxxnn.png",
-    family: "Kale",
+    imgUrl: "../assets/images/vegetables/cherokeepurpletomato.jpg",
+    info:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur beatae dolorum minus, non voluptas minima voluptatum odit, dignissimos cumque doloribus illum temporibus possimus. Similique voluptatibus corporis vel, eius ipsa eveniet ad possimus. Quia, voluptates sunt adipisci ratione atque perferendis?",
+    family: "Tomato",
     variety: "Cherokee Purple",
-    firstsowdate: "March",
-    lastsowdate: "August",
-    environment: "Sow outdoors",
+    sowindoors: "Mid January",
+    sowoutdoors: "Late February",
+    lastsow: "Early October",
+    sunexposure: "Partly Sunny",
+    soilph: "6-7",
+    isActive: false
+  },
+  {
+    imgUrl: "../assets/images/vegetables/lacinatokale.jpg",
+    info:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur beatae dolorum minus, non voluptas minima voluptatum odit, dignissimos cumque doloribus illum temporibus possimus. Similique voluptatibus corporis vel, eius ipsa eveniet ad possimus. Quia, voluptates sunt adipisci ratione atque perferendis?",
+    family: "Kale",
+    variety: "Lacinato",
+    sowindoors: "Mid January",
+    sowoutdoors: "Late February",
+    lastsow: "Early October",
+    sunexposure: "Partly Sunny",
+    soilph: "6-7",
     isActive: false
   },
 

@@ -1,20 +1,23 @@
 <app-nav-bar-hamburger></app-nav-bar-hamburger>
 <app-nav-bar></app-nav-bar>
 <h1>Knowledge Library</h1>
-<ngb-tabset>
-  <ngb-tab title="Service Now">
-    <ng-template ngbTabContent>
-      <app-service-now></app-service-now>
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab title="Angular">
-    <ng-template ngbTabContent>
-      <app-data-binding></app-data-binding>
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab title="Git">
-    <ng-template ngbTabContent>
-      <app-git-bash></app-git-bash>
-    </ng-template>
-  </ngb-tab>
-</ngb-tabset>
+
+<div class="ega_container">
+  <ngb-tabset>
+    <ngb-tab title="Service Now">
+      <ng-template ngbTabContent>
+        <app-service-now></app-service-now>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Angular">
+      <ng-template ngbTabContent>
+        <app-data-binding></app-data-binding>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Git">
+      <ng-template ngbTabContent>
+        <app-git-bash></app-git-bash>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

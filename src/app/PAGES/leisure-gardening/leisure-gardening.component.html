@@ -1,17 +1,20 @@
 <app-nav-bar-hamburger></app-nav-bar-hamburger>
 <app-nav-bar></app-nav-bar>
 <h1>Gardening Library</h1>
-<ngb-tabset>
-  <ngb-tab title="Blog">
-    <ng-template ngbTabContent>
-      <div class="ega_container">
-        <p>Blog Placeholder</p>
-      </div>
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab title="Zone 9B Planting Schedule">
-    <ng-template ngbTabContent>
-      <app-planting-schedule></app-planting-schedule>
-    </ng-template>
-  </ngb-tab>
-</ngb-tabset>
+
+<div class="ega_container">
+  <ngb-tabset>
+    <ngb-tab title="Blog">
+      <ng-template ngbTabContent>
+        <div class="ega_container">
+          <p>Blog Placeholder</p>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Zone 9B Planting Schedule">
+      <ng-template ngbTabContent>
+        <app-planting-schedule></app-planting-schedule>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

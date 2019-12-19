@@ -5,7 +5,8 @@ mdb-carousel-item div a img {
 }
 ngb-tabset {
   display: grid;
-  grid-template-columns: 20vw auto;
+  grid-template-columns: 10vw auto;
+  font-size: 1rem;
 }
 div.w-100 {
   width: 90% !important;

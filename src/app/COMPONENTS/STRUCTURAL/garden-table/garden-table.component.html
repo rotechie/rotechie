@@ -34,7 +34,7 @@
             <span class="font-small">{{ row.isActive }}</span>
           </td>
           <td>
-            <p class="btn btn-primary btn-sm" (click)="toggleModal()">
+            <p class="btn btn-secondary btn-sm" (click)="openModal()">
               >
             </p>
           </td>
@@ -53,11 +53,15 @@
         (click)="hideModal()"
         aria-label="Close"
       ></button>
-      <div class="modal-title h5">Modal title</div>
+      <div class="modal-title h5">{{ modalTitle }}</div>
     </div>
     <div class="modal-body">
       <div class="content">
-        <pre>{{ selected }}</pre>
+        <img src="{{ modalImage }}" alt="" />
+        <p>
+          {{ modalBody }}
+        </p>
+        <!-- <pre>{{ selected }}</pre> -->
       </div>
     </div>
     <div class="modal-footer"></div>

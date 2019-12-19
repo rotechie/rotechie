@@ -2,21 +2,33 @@
 
 #ega_gardening_table {
   padding: 1% 3%;
+  overflow-x: scroll;
 }
 
 .modal {
   display: block;
-  background: none;
-  // height: 50vh;
+  background: white;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   position: fixed;
 }
 .modal-container {
-  background: white;
+  background-color: #fefefe;
   position: absolute;
   float: left;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
+  padding: 20px;
+  border: 1px solid #888;
+}
+
+.content img {
+  max-width: 20em;
+  float: left;
+  padding: 1rem;
+}
+.content p {
+  padding: 1rem;
 }
