@@ -33,7 +33,7 @@ import { ServiceNowComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/service-no
 import { InterviewQuestionsComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/service-now/interview-questions/interview-questions.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { SshComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/git-bash/ssh/ssh.component";
-import { PlantingScheduleComponent } from './COMPONENTS/GARDENING/planting-schedule/planting-schedule.component';
+import { PlantingScheduleComponent } from "./COMPONENTS/GARDENING/planting-schedule/planting-schedule.component";
 
 @NgModule({
   declarations: [

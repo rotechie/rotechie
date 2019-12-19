@@ -14,9 +14,8 @@ export class GardenTableComponent implements OnInit {
   public columns: Columns[];
   public data: Vegetable[] = [];
 
-  ngOnInit(): void {
+  constructor() {
     this.modal = false;
-    console.log(this);
     this.selected;
     this.columns = [
       { key: "family", title: "Family" },
@@ -27,10 +26,10 @@ export class GardenTableComponent implements OnInit {
       { key: "sunexposure", title: "Sun Exposure" },
       { key: "soilph", title: "Soil pH" },
       { key: "isActive", title: "STATUS" }
-
-      // { key: "imgUrl", title: "Image" }
     ];
+  }
 
+  ngOnInit(): void {
     this.configurationAdvanced = { ...DefaultConfig };
     this.configurationAdvanced.orderEnabled = true;
     this.configurationAdvanced.searchEnabled = true;
@@ -40,12 +39,14 @@ export class GardenTableComponent implements OnInit {
   }
   onEvent(event: { event: string; value: any }): void {
     this.selected = JSON.stringify(event.value.row, null, 2);
-    // console.log(event.value.row, null, 2);
   }
 
-  showModal(): void {
-    alert("suck my ass");
-    this.modal = true;
+  toggleModal(): void {
+    if ("this.modal === 'false'") {
+      this.modal = true;
+    } else {
+      this.modal = false;
+    }
   }
 
   hideModal(): void {
