@@ -12,6 +12,7 @@ export class GardenTableComponent implements OnInit {
   public modalTitle: any;
   public modalImage: any;
   public modalBody: String;
+  public modalBody2: String;
   public configurationAdvanced: Config;
   public columns: Columns[];
   public data: Vegetable[] = [];
@@ -45,6 +46,7 @@ export class GardenTableComponent implements OnInit {
     this.modalTitle = row.variety + " " + row.family;
     this.modalImage = row.imgUrl;
     this.modalBody = row.info;
+    this.modalBody2 = row.info2;
   }
 
   openModal(): void {

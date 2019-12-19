@@ -34,6 +34,7 @@ import { InterviewQuestionsComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/se
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { SshComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/git-bash/ssh/ssh.component";
 import { PlantingScheduleComponent } from "./COMPONENTS/GARDENING/planting-schedule/planting-schedule.component";
+import { NgxGistModule } from "ngx-gist/dist/ngx-gist.module";
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { PlantingScheduleComponent } from "./COMPONENTS/GARDENING/planting-sched
     MatMenuModule,
     MatButtonModule,
     TableModule,
-    NgbModule
+    NgbModule,
+    NgxGistModule
   ],
   providers: [ChristmasCardGalleryService, ThailandGalleryService],
   bootstrap: [AppComponent]
