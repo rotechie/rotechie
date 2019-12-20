@@ -31,8 +31,9 @@ $header-line-height: 1.25;
   --theme-charcoal: #373737;
   --theme-transparent-grey: #8a8a8a1e;
   --theme-teal: #17a2b8;
-  // START -- Over rides for high specificity node_module styles
+  // -- Over rides for high specificity node_module styles --
 
+  // START TAB OVERRIDES
   .ngx-menu {
     padding: 0;
     text-align: center;
@@ -47,18 +48,11 @@ $header-line-height: 1.25;
   ngb-tabset {
     padding: 0 1%;
   }
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 10%;
-  }
   ngb-tabset > ul > li > a {
     color: var(--theme-charcoal);
   }
   .ngx-pagination-range-dropdown-button {
     padding: 0;
-  }
-  ol.carousel-indicators li.ng-star-inserted {
-    display: none;
   }
   .ega_tab_container > ul > li:nth-child(1) > a {
     border: none !important;
@@ -69,12 +63,33 @@ $header-line-height: 1.25;
   ngb-tabset > ul {
     margin: 0 0 2% 0;
   }
+  // END TAB OVERRIDES
+  // START GIST OVERRIDES
+  ngx-gist {
+    display: grid;
+    min-height: 400px;
+  }
+  ngx-gist > iframe {
+    height: 100% !important;
+  }
+  // END GIST OVERRIDES
+
+  // START PHOTO CAROUSEL OVERRIDES
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+
+  ol.carousel-indicators li.ng-star-inserted {
+    display: none;
+  }
   span.carousel-control-next-icon {
     background-image: url(./assets/images/arrow_right_grey.svg) !important;
   }
   span.carousel-control-prev-icon {
     background-image: url(./assets/images/arrow_left_grey.svg) !important;
   }
+  // END PHOTO CAROUSEL OVERRIDES
 }
 @media (min-width: 64em) {
   // END -- Over rides for high specificity node_module styles
