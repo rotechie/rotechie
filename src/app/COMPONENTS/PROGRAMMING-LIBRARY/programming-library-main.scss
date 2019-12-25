@@ -8,7 +8,10 @@ ngb-tabset {
 }
 
 .ega_view_container {
-  padding: 5%;
+  padding: 0 5%;
+}
+.ega_view_container li {
+  padding: 2% 0;
 }
 .btn-outline-primary {
   color: var(--theme-charcoal);
@@ -74,4 +77,10 @@ span {
 }
 .ega_orange {
   color: rgb(177, 82, 19);
+}
+.ega_underline {
+  text-decoration: underline;
+}
+.ega_italic {
+  font-style: italic;
 }
