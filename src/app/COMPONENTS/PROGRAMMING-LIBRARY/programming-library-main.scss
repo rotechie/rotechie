@@ -48,3 +48,30 @@ ngb-tabset {
 .ega_main_list_interview {
   padding: 3%;
 }
+.ega_interview_questions_tab {
+  position: relative;
+}
+.ega_interview_question_component {
+  position: relative;
+  padding: 5%;
+  left: 0;
+  top: 0;
+}
+span {
+  font-weight: 600;
+}
+.ega_red {
+  color: red;
+}
+.ega_blue {
+  color: blue;
+}
+.ega_green {
+  color: green;
+}
+.ega_teal {
+  color: teal;
+}
+.ega_orange {
+  color: rgb(177, 82, 19);
+}

@@ -27,47 +27,23 @@
     <div class="ega_programming_view_interview">
       <div [ngSwitch]="typeOfInterview">
         <div *ngSwitchCase="'all'" class="ega_interview_all">
-          <h2>ALL INTERVIEW QUESTIONS</h2>
-          <button
-            (click)="category = 'all'"
-            type="button"
-            class="btn btn-info ega_start_button"
-          >
-            Start
-          </button>
+          <h2 (click)="category = 'all'">ALL INTERVIEW QUESTIONS</h2>
         </div>
         <div
           *ngSwitchCase="'administration'"
           class="ega_interview_administration"
         >
-          <h2>ADMINISTRATION INTERVIEW QUESTIONS</h2>
-          <button
-            (click)="category = 'administration'"
-            type="button"
-            class="btn btn-info ega_start_button"
-          >
-            Start
-          </button>
+          <h2 (click)="category = 'administration'">
+            ADMINISTRATION INTERVIEW QUESTIONS
+          </h2>
         </div>
         <div *ngSwitchCase="'scripting'" class="ega_interview_scripting">
-          <h2>SCRIPTING INTERVIEW QUESTIONS</h2>
-          <button
-            (click)="category = 'scripting'"
-            type="button"
-            class="btn btn-info ega_start_button"
-          >
-            Start
-          </button>
+          <h2 (click)="category = 'scripting'">
+            SCRIPTING INTERVIEW QUESTIONS
+          </h2>
         </div>
         <div *ngSwitchCase="'training'" class="ega_interview_training">
-          <h2>TRAINING INTERVIEW QUESTIONS</h2>
-          <button
-            (click)="category = 'training'"
-            type="button"
-            class="btn btn-info ega_start_button"
-          >
-            Start
-          </button>
+          <h2 (click)="category = 'training'">TRAINING INTERVIEW QUESTIONS</h2>
         </div>
         <div *ngSwitchDefault class="ega_placeholder">
           <!-- <span>Select an option.</span> -->

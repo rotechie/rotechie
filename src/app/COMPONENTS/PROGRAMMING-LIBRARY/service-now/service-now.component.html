@@ -1,10 +1,12 @@
 <ngb-tabset [orientation]="vertical" class="ega_tab_container">
-  <ngb-tab title="" id="ega_empty_tab" class="ega_tab ega_empty_tab">
+  <ngb-tab title="" id="ega_empty_tab">
     <ng-template ngbTabContent class="ega_tab_content"> </ng-template>
   </ngb-tab>
-  <ngb-tab title="Interview Questions" class="ega_tab">
-    <ng-template ngbTabContent class="ega_tab_content">
-      <app-interview-questions></app-interview-questions>
+  <ngb-tab title="Interview Questions" id="ega_interview_questions_tab">
+    <ng-template ngbTabContent id="ega_tab_content">
+      <app-interview-questions
+        class="ega_interview_question_component"
+      ></app-interview-questions>
     </ng-template>
   </ngb-tab>
   <ngb-tab title="Business Rules" class="ega_tab">

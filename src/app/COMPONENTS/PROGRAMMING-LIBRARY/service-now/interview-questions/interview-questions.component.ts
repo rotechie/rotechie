@@ -51,38 +51,4 @@ export class InterviewQuestionsComponent implements OnInit {
     this.ega_start_questions();
     console.log(this.sortedInterviewQuestionsAll);
   }
-
-  //   this.ega_start_administrative_questions = () => {
-  //     this.sortedInterviewQuestions = [];
-  //     snowInterviewQuestions.forEach(element => {
-  //       if (element.category[0] == "all") {
-  //         this.sortedInterviewQuestions.push(element);
-  //       }
-  //     });
-  //   };
-  //   this.ega_start_scripting_questions = () => {
-  //     this.sortedInterviewQuestions = [];
-  //     snowInterviewQuestions.forEach(element => {
-  //       if (element.category[0] == "scripting") {
-  //         this.sortedInterviewQuestions.push(element);
-  //       }
-  //     });
-  //   };
-  //   this.ega_start_all_questions = () => {
-  //     this.sortedInterviewQuestions = [];
-  //     snowInterviewQuestions.forEach(element => {
-  //       if (element.category[0] == "administration") {
-  //         this.sortedInterviewQuestions.push(element);
-  //       }
-  //     });
-  //   };
-  //   this.ega_start_all_questions = () => {
-  //     this.sortedInterviewQuestions = [];
-  //     snowInterviewQuestions.forEach(element => {
-  //       if (element.category[0] == "training") {
-  //         this.sortedInterviewQuestions.push(element);
-  //       }
-  //     });
-  //   };
-  // }
 }

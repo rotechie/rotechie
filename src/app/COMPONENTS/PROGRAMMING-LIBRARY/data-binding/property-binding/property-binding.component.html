@@ -1,5 +1,27 @@
 <div class="ega_view_container">
   <p>
-    property binding
+    Property binding is a way to pass data from the <span>component</span> to
+    the <span>view</span>. This is also known as
+    <span>One-Way Data Binding</span>. The reason one would use propety-binding
+    over interpolation is because in property binding, you can pass any kind of
+    data and are not limited to strings only.
+  </p>
+  <p>Regular interpolation:</p>
+  <br />
+  <div>
+    <ngx-gist [gistId]="'rotechie/ef3204fd7534e7ea2638f017cbcd643c'"></ngx-gist>
+  </div>
+  <br />
+  <p>Property Binding:</p>
+  <br />
+  <div>
+    <ngx-gist [gistId]="'rotechie/0d95c00dbcd5550a94670adb12b8a4e3'"></ngx-gist>
+  </div>
+  <p>
+    Property bindings are evaluated on every browser event and any changes made
+    to the objects in the event, are applied to the properties. You can use
+    properties binding to control boolean switches. When a property is set to a
+    boolean evaluation, it can be turned on or off by an event that changes its
+    declared value.
   </p>
 </div>
