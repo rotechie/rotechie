@@ -31,6 +31,39 @@ $header-line-height: 1.25;
   --theme-charcoal: #373737;
   --theme-transparent-grey: #8a8a8a1e;
   --theme-teal: #17a2b8;
+
+  .ega_bold {
+    font-weight: 600;
+  }
+  .ega_red {
+    color: red;
+    font-weight: 600;
+  }
+  .ega_blue {
+    color: blue;
+    font-weight: 600;
+  }
+  .ega_green {
+    color: green;
+    font-weight: 600;
+  }
+
+  .ega_teal {
+    color: teal;
+    font-weight: 600;
+  }
+  .ega_orange {
+    color: rgb(177, 82, 19);
+    font-weight: 600;
+  }
+  .ega_underline {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  .ega_italic {
+    font-style: italic;
+    font-weight: 600;
+  }
   // -- Over rides for high specificity node_module styles --
 
   // START TAB OVERRIDES

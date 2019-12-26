@@ -1,0 +1,9 @@
+ngb-tabset {
+  display: inline-grid;
+  grid-template-columns: 20vw auto;
+  width: 100%;
+}
+::ng-deep .ega_tool_tip .tooltip-inner {
+  background-color: rgba(16, 16, 29, 0.87);
+  color: white;
+}

@@ -35,6 +35,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { SshComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/git-bash/ssh/ssh.component";
 import { PlantingScheduleComponent } from "./COMPONENTS/GARDENING/planting-schedule/planting-schedule.component";
 import { NgxGistModule } from "ngx-gist/dist/ngx-gist.module";
+import { BlogComponent } from './COMPONENTS/GARDENING/blog/blog.component';
+import { GerminationComponent } from './COMPONENTS/GARDENING/blog/germination/germination.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { NgxGistModule } from "ngx-gist/dist/ngx-gist.module";
     ServiceNowComponent,
     InterviewQuestionsComponent,
     SshComponent,
-    PlantingScheduleComponent
+    PlantingScheduleComponent,
+    BlogComponent,
+    GerminationComponent
   ],
   imports: [
     BrowserModule,
