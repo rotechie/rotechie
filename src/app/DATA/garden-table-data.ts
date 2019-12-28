@@ -61,8 +61,8 @@ export const data = [
       "Watch for outbreaks of gray-green cabbage aphids, which often gather in clusters within the folds of frilly kale leaves. Treat small problems with insecticidal soap. Pick off and discard badly infested leaves.",
     family: "Kale",
     variety: "Lacinato",
-    sowindoors: "Late September",
-    sowoutdoors: "Late August",
+    sowindoors: "Late August",
+    sowoutdoors: "Late September",
     lastsow: "Late October",
     sunexposure: "	Full Sun to Partial Shade",
     soilph: "5.5-6.8",
@@ -89,13 +89,28 @@ export const data = [
       "Fava bean, actually a vetch, is an erect, leafy, winter or spring annual legume, growing from 2 to 6 feet tall. One or more thick, unbranchedstems grow from the base of the plant.The fava bean plant produces 6- to 8-inch seed pods that contain four to six flat seeds. The flattened appearance of the seeds gave the beans their other common name: broad beans.",
     info2:
       "Best stand establishment is obtained by planting 1 to 3 inches deep (to moisture) into a firm, wellprepared seedbed, using a drill set to 30-inch rows or a common corn planter. The distance between plants in the row should be approximately 6 inches",
-    family: "Legume",
-    variety: "Fava Bean",
+    family: "Fava Bean",
+    variety: "Broad Windsor",
     sowindoors: "Early September",
     sowoutdoors: "Early September",
     lastsow: "Early November",
     sunexposure: "Full Sun",
     soilph: "4.5-8.3",
+    isActive: false
+  },
+  {
+    imgUrl: "../assets/images/vegetables/beets.jpg",
+    info:
+      "Beets grow quickly. They come up and are ready to plant sometimes within three weeks.  Multi-sowing is ideal for beetroot. Sow 4 seeds to a cell. For a winter harvest, look to harvest in November after 40 to 50 days of maturity.",
+    info2:
+      "Use the leaves and root in salads for excellent contrast. Beet roots reach 2-3″ round and are most tender harvested early.",
+    family: "Beetroot",
+    variety: "Bulls Blood",
+    sowindoors: "Early February",
+    sowoutdoors: "Mid March",
+    lastsow: "Mid September",
+    sunexposure: "Full Sun",
+    soilph: "6.0-8.0",
     isActive: false
   }
 ];

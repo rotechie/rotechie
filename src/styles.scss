@@ -65,7 +65,12 @@ $header-line-height: 1.25;
     font-weight: 600;
   }
   // -- Over rides for high specificity node_module styles --
-
+  // START POPOVER OVERRIDES
+  ngb-popover-window .popover-header,
+  ngb-popover-window .popover-body {
+    padding: 5%;
+  }
+  // END POPOVER OVERRIDES
   // START TAB OVERRIDES
   .ngx-menu {
     padding: 0;

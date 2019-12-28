@@ -37,6 +37,7 @@ import { PlantingScheduleComponent } from "./COMPONENTS/GARDENING/planting-sched
 import { NgxGistModule } from "ngx-gist/dist/ngx-gist.module";
 import { BlogComponent } from './COMPONENTS/GARDENING/blog/blog.component';
 import { GerminationComponent } from './COMPONENTS/GARDENING/blog/germination/germination.component';
+import { HardinessComponent } from './COMPONENTS/GARDENING/blog/hardiness/hardiness.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { GerminationComponent } from './COMPONENTS/GARDENING/blog/germination/ge
     SshComponent,
     PlantingScheduleComponent,
     BlogComponent,
-    GerminationComponent
+    GerminationComponent,
+    HardinessComponent
   ],
   imports: [
     BrowserModule,

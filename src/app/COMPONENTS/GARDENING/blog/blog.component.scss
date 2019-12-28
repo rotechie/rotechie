@@ -3,7 +3,17 @@ ngb-tabset {
   grid-template-columns: 20vw auto;
   width: 100%;
 }
-::ng-deep .ega_tool_tip .tooltip-inner {
-  background-color: rgba(16, 16, 29, 0.87);
-  color: white;
+
+img {
+  width: 100%;
+  padding: 5% 0%;
+}
+.ega_hardiness_info {
+  padding: 1% 3%;
+}
+.ega_container span {
+  font-weight: bold;
+}
+.ega_container img {
+  width: 100%;
 }
