@@ -31,7 +31,10 @@ $header-line-height: 1.25;
   --theme-charcoal: #373737;
   --theme-transparent-grey: #8a8a8a1e;
   --theme-teal: #17a2b8;
-
+  h1 {
+    font-family: "Pontano Sans", sans-serif;
+    color: var(--theme-charcoal);
+  }
   .ega_bold {
     font-weight: 600;
   }

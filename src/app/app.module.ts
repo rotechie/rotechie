@@ -26,7 +26,6 @@ import { StyleBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-bin
 import { EventBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/event-binding/event-binding.component";
 import { TwoWayBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/two-way-binding/two-way-binding.component";
 import { ImageGalleryComponent } from "./COMPONENTS/STRUCTURAL/image-gallery/image-gallery.component";
-import { SideBarComponent } from "./COMPONENTS/STRUCTURAL/side-bar/side-bar.component";
 import { GardenTableComponent } from "./COMPONENTS/STRUCTURAL/garden-table/garden-table.component";
 import { TableModule } from "ngx-easy-table";
 import { ServiceNowComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/service-now/service-now.component";
@@ -35,9 +34,11 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { SshComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/git-bash/ssh/ssh.component";
 import { PlantingScheduleComponent } from "./COMPONENTS/GARDENING/planting-schedule/planting-schedule.component";
 import { NgxGistModule } from "ngx-gist/dist/ngx-gist.module";
-import { BlogComponent } from './COMPONENTS/GARDENING/blog/blog.component';
-import { GerminationComponent } from './COMPONENTS/GARDENING/blog/germination/germination.component';
-import { HardinessComponent } from './COMPONENTS/GARDENING/blog/hardiness/hardiness.component';
+import { BlogComponent } from "./COMPONENTS/GARDENING/blog/blog.component";
+import { GerminationComponent } from "./COMPONENTS/GARDENING/blog/germination/germination.component";
+import { HardinessComponent } from "./COMPONENTS/GARDENING/blog/hardiness/hardiness.component";
+import { ScssComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/scss/scss.component";
+import { GridSystemComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/scss/grid-system/grid-system.component";
 
 @NgModule({
   declarations: [
@@ -60,7 +61,6 @@ import { HardinessComponent } from './COMPONENTS/GARDENING/blog/hardiness/hardin
     EventBindingComponent,
     TwoWayBindingComponent,
     ImageGalleryComponent,
-    SideBarComponent,
     GardenTableComponent,
     ServiceNowComponent,
     InterviewQuestionsComponent,
@@ -68,7 +68,9 @@ import { HardinessComponent } from './COMPONENTS/GARDENING/blog/hardiness/hardin
     PlantingScheduleComponent,
     BlogComponent,
     GerminationComponent,
-    HardinessComponent
+    HardinessComponent,
+    ScssComponent,
+    GridSystemComponent
   ],
   imports: [
     BrowserModule,

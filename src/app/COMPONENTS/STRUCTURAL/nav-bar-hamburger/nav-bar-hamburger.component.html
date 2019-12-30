@@ -1,10 +1,12 @@
-<button
-  class="ega_navButton"
-  (click)="toggle()"
-  [style.color]="ega_colorChange()"
->
-  <i class="fa fa-bars">{{ show == true ? "About" : "Home" }}</i>
-</button>
+<div class="ega_about">
+  <button
+    class="ega_navButton"
+    (click)="toggle()"
+    [style.color]="ega_colorChange()"
+  >
+    <i class="fa fa-bars">{{ show == true ? "About" : "Home" }}</i>
+  </button>
+</div>
 <ng-container *ngIf="!show">
   <div class="overlay" [@fadeInOut]>
     <!--Animation trigger-->

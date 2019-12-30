@@ -13,7 +13,7 @@ li {
 }
 nav {
   text-align: center;
-  width: 100%;
+  width: 30%;
   position: relative;
   height: auto;
   overflow: hidden;
@@ -44,7 +44,7 @@ nav ul li a:hover {
 /*styling open close button*/
 
 .ega_navButton {
-  position: absolute;
+  // position: absolute;
   font-size: 35px;
   top: 10px;
   right: 50px;
@@ -58,7 +58,10 @@ nav ul li a:hover {
   -webkit-transition: all 0.2s linear 0s;
   -o-transition: all 0.2s linear 0s;
 }
-
+.ega_about {
+  position: absolute;
+  right: 48px;
+}
 .fa-bars {
   position: absolute;
   z-index: 999;
@@ -195,9 +198,9 @@ article {
     display: block;
     margin: 5px 0;
   }
-  .ega_navButton {
-    position: unset;
-    float: right;
-    margin: 10px 40px;
-  }
+  // .ega_navButton {
+  //   position: unset;
+  //   float: right;
+  //   margin: 10px 40px;
+  // }
 }

@@ -60,3 +60,8 @@ ngb-tabset {
   left: 0;
   top: 0;
 }
+@media (max-width: 64em) {
+  ngb-tabset {
+    grid-template-columns: auto;
+  }
+}
