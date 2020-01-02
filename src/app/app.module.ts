@@ -25,7 +25,7 @@ import { ClassBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-bin
 import { StyleBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/style-binding/style-binding.component";
 import { EventBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/event-binding/event-binding.component";
 import { TwoWayBindingComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/data-binding/two-way-binding/two-way-binding.component";
-import { ImageGalleryComponent } from "./COMPONENTS/STRUCTURAL/image-gallery/image-gallery.component";
+// import { ImageGalleryComponent } from "./COMPONENTS/STRUCTURAL/image-gallery/image-gallery.component";
 import { GardenTableComponent } from "./COMPONENTS/STRUCTURAL/garden-table/garden-table.component";
 import { TableModule } from "ngx-easy-table";
 import { ServiceNowComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/service-now/service-now.component";
@@ -60,7 +60,7 @@ import { GridSystemComponent } from "./COMPONENTS/PROGRAMMING-LIBRARY/scss/grid-
     StyleBindingComponent,
     EventBindingComponent,
     TwoWayBindingComponent,
-    ImageGalleryComponent,
+    // ImageGalleryComponent,
     GardenTableComponent,
     ServiceNowComponent,
     InterviewQuestionsComponent,

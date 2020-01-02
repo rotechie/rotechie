@@ -35,6 +35,7 @@ $header-line-height: 1.25;
     font-family: "Pontano Sans", sans-serif;
     color: var(--theme-charcoal);
   }
+
   .ega_bold {
     font-weight: 600;
   }
@@ -67,7 +68,7 @@ $header-line-height: 1.25;
     font-style: italic;
     font-weight: 600;
   }
-  // -- Over rides for high specificity node_module styles --
+
   // START POPOVER OVERRIDES
   ngb-popover-window .popover-header,
   ngb-popover-window .popover-body {
@@ -75,6 +76,47 @@ $header-line-height: 1.25;
   }
   // END POPOVER OVERRIDES
   // START TAB OVERRIDES
+  .ega_tab_container {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+  }
+  .ega_tab_container ul {
+    grid-column: 1 / span 4;
+  }
+  .ega_tab_container div {
+    grid-column: 5 / span 20;
+  }
+
+  ngb-tabset div,
+  ngb-tabset {
+    padding: 0 1%;
+  }
+  ngb-tabset > ul > li > a {
+    color: var(--theme-charcoal);
+  }
+
+  .ega_tab_container > ul > li:nth-child(1) > a {
+    border: none !important;
+  }
+  ngb-tabset > ul > li {
+    font-weight: bold;
+  }
+  ngb-tabset > ul {
+    margin: 0 0 2% 0;
+  }
+
+  // END TAB OVERRIDES
+  // START GIST OVERRIDES
+  ngx-gist {
+    display: grid;
+    min-height: 400px;
+  }
+  ngx-gist > iframe {
+    height: 100% !important;
+  }
+  .ngx-pagination-range-dropdown-button {
+    padding: 0;
+  }
   .ngx-menu {
     padding: 0;
     text-align: center;
@@ -85,35 +127,6 @@ $header-line-height: 1.25;
   .ngx-pagination-range-dropdown-button-item:hover {
     background-color: var(--theme-transparent-grey);
   }
-  ngb-tabset div,
-  ngb-tabset {
-    padding: 0 1%;
-  }
-  ngb-tabset > ul > li > a {
-    color: var(--theme-charcoal);
-  }
-  .ngx-pagination-range-dropdown-button {
-    padding: 0;
-  }
-  .ega_tab_container > ul > li:nth-child(1) > a {
-    border: none !important;
-  }
-  ngb-tabset > ul > li {
-    font-weight: bold;
-  }
-  ngb-tabset > ul {
-    margin: 0 0 2% 0;
-  }
-  // END TAB OVERRIDES
-  // START GIST OVERRIDES
-  ngx-gist {
-    display: grid;
-    min-height: 400px;
-  }
-  ngx-gist > iframe {
-    height: 100% !important;
-  }
-
   // END GIST OVERRIDES
 
   // START PHOTO CAROUSEL OVERRIDES
@@ -176,6 +189,9 @@ body {
   @media #{$mq-xlarge} {
     margin: 0 12%;
   }
+}
+.ega_view_container h1 {
+  padding: 5% 0;
 }
 button:focus {
   outline: unset;

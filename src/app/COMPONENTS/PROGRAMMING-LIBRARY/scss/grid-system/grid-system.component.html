@@ -1,1 +1,180 @@
-<p>grid-system works!</p>
+<div class="ega_view_container">
+  <h1>GRID SYSTEM</h1>
+  <button
+    type="button"
+    class="btn btn-outline-primary"
+    (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed"
+    aria-controls="collapseExample"
+  >
+    TL;DR
+  </button>
+  <br />
+
+  <div id="collapseExample" [ngbCollapse]="isCollapsed">
+    <div class="card " class="tldr">
+      <div class="card-body">
+        <div>
+          <ngx-gist
+            [gistId]="'rotechie/2cdd2843ab0a19651a74aa2125f8f3b6'"
+          ></ngx-gist>
+        </div>
+        <br />
+        <p>Gives you:</p>
+        <br />
+        <img
+          src="./../../../../../assets/images/programming-library/grid-image-3.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <p>
+    The grid system allows you to responsively position HTML elements in the
+    dom, independent of their HTML structure.
+  </p>
+  <p>
+    In the following example, the standard HTML dom order is how your HTML
+    elements are normally displayed by default. They are layed out one after the
+    other, top to bottom.
+  </p>
+
+  <p>
+    If these elements are displayed inline, they can then be positioned in the
+    same row; however, they are still forced to maintain their original order
+    from left to right.
+  </p>
+  <p>
+    Normal positioning techniques allow you to position elements within the
+    above ristrictions.
+  </p>
+
+  <p>
+    What the Grid System allows you to do, is no matter the order of the
+    elements, each element can be moved and positioned anywhere in the document
+    tree, regardless of the original HTML order.
+  </p>
+  <img
+    class="ega_grid_image"
+    src="../../../../../assets/images/programming-library/grid-image-1.jpg"
+    alt=""
+  />
+  <p>
+    If you are familiar with the bootstrap way of responsive positioning through
+    the use of columns (
+    <a href="https://getbootstrap.com/docs/4.0/layout/grid/">found here</a> ),
+    the Grid System takes it a step further, allowing you to customize the
+    quantity of columns and how many of them each element should span.
+  </p>
+
+  <p>Suppose you had the following html structure:</p>
+
+  <div>
+    <ngx-gist [gistId]="'rotechie/4fb0fc8f1eccf895658758363fab09fd'"></ngx-gist>
+  </div>
+  <br />
+  <p>
+    Unlike bootstrap columns, which are declared on the HTML element itself, CSS
+    Grid is applied entirely in CSS. It begins with the parent container being
+    set to "display: grid". in our example above, this parent container is
+    called "wrapper". Simply setting this to
+    <span class="ega_bold">display: grid</span> sets it up to receive grid
+    specifications. The first of which, is the"grid-template-columns"
+    <span class="ega_bold">"grid-template-columns"</span>
+    specification, which tells the grid how many columns it will be working
+    with.
+  </p>
+  <div style="max-height: 200px;">
+    <ngx-gist [gistId]="'rotechie/286fcb7c59e05c33f53108bc8176fce3'"></ngx-gist>
+  </div>
+  <br />
+  <p>
+    In the above example, we jump straight into the more elegant shorthand for
+    specifying a number of columns. We use the
+    <span class="ega_bold">repeat()</span> method which takes in two arguments;
+    the first argument is the number of columns we would like our grid to have.
+    Bootstrap along with most other column based systems cap this value at 12.
+    With CSS Grid, you can specify whatever number you would like. We will say
+    that we would like to have 24 columns (without the repeat method, you would
+    have to write the second argument 24 separate times).
+  </p>
+  <p>
+    The second argument is the size. CSS Grid introduces a new value we can make
+    use of. The fraction value. In essence, we are stating that we want 24
+    columns, each equating to 1 equal part, or fraction, of whatever the total
+    width of the grid is. It is a way to ensure your columns take up exactly
+    1/24th of the grid and that they size accordingly when the viewport is
+    changed. <span class="ega_bold">repeat(24, 1fr)</span>
+  </p>
+  <p>
+    We can see from the following screenshot that the grid now spans 24 columns
+    and that each element is by default placed within one column.
+  </p>
+  <br />
+  <img
+    src="./../../../../../assets/images/programming-library/grid-template-columns-1.jpg"
+    alt=""
+  />
+  <p>
+    To tell the grid how many columns each element should span, we can make use
+    of the <span class="ega_bold">"grid-column"</span> style property
+  </p>
+  <p>
+    In the following CSS, some height has been added to the elements in order to
+    better visualize what is going on.
+  </p>
+  <p>
+    Each element now has the <span class="ega_bold">grid-column</span> style
+    which takes in 2 values separated by a forward slash.
+  </p>
+  <p style="text-align: center">
+    <span class="ega_teal ega_bold">&#123; grid-column: </span
+    ><span class="ega_orange ega_bold">1 / span 24 &#125;</span>
+  </p>
+  <p>
+    The first value is the column you wish the element to begin on. Since we
+    want the header to span the entire width of the page, we tell it to start at
+    <span class="ega_bold">column 1</span>, and then specify how many columns it
+    should span using <span class="ega_bold">span 24</span>.
+  </p>
+  <div>
+    <ngx-gist [gistId]="'rotechie/5cea71e8bc517d96088d6996b2fa6393'"></ngx-gist>
+  </div>
+  <br />
+  <p>The resulting view looks like this:</p>
+  <img
+    src="./../../../../../assets/images/programming-library/grid-image-2.jpg"
+    alt=""
+  />
+  <p>
+    By adding one more property to each element, the
+    <span class="ega_bold">grid-row </span> property, we can specify where each
+    element should be positioned even on a vertical plane.
+  </p>
+  <p>
+    In the following code, we specify that the header needs to be positioned on
+    row 4. Since there are 4 elements we are dealing with, we are essentially
+    placing the header at the bottom. The row positioning for the rest of the
+    elements has also been changed to place them as they are in the first image
+    at the top (image of blocks).
+  </p>
+
+  <div>
+    <ngx-gist [gistId]="'rotechie/2cdd2843ab0a19651a74aa2125f8f3b6'"></ngx-gist>
+  </div>
+  <br />
+  <p>The resulting view looks like this:</p>
+  <img
+    src="./../../../../../assets/images/programming-library/grid-image-3.jpg"
+    alt=""
+  />
+
+  <p>
+    The power behind this, is that if you want a completely different layout in
+    a mobile view for example, you do not have to code new HTML in order to
+    place the elements in different orders. You can place them all using CSS
+    Grid.
+  </p>
+</div>

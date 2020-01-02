@@ -1,26 +1,22 @@
-import { Component } from "@angular/core";
+// import { Component } from "@angular/core";
 
-@Component({
-  selector: "app-root",
-  templateUrl: `
-  
-  // Method # 1: Interpolation:
+// @Component({
+//   selector: "app-root",
+//   templateUrl: `
 
-  <img src="{{ Only string values go here }}"/>
+//   // Method # 1: Interpolation:
 
-  // Method # 2: Property binding
-  :
-  <img [src]="Whatever value goes here. String, Boolean, Number, etc."/>
+//   <img src="{{ Only string values go here }}"/>
 
-  // Method # 3: :
+//   // Method # 2: Property binding
+//   :
+//   <img [src]="Whatever value goes here. String, Boolean, Number, etc."/>
 
-  <img bind-src="Whatever value goes here. String, Boolean, Number, etc.">
+//   // Method # 3: :
 
+//   <img bind-src="Whatever value goes here. String, Boolean, Number, etc.">
 
-
-
-  
-  `,
-  styleUrls: ["./app.component.scss"]
-})
-export class AppComponent {}
+//   `,
+//   styleUrls: ["./app.component.scss"]
+// })
+// export class AppComponent {}

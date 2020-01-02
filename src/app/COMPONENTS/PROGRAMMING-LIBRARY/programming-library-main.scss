@@ -1,8 +1,9 @@
-ngb-tabset {
-  display: inline-grid;
-  grid-template-columns: 20vw auto;
-  width: 100%;
-}
+// ngb-tabset {
+//   display: inline-grid;
+//   grid-template-columns: 20vw auto;
+//   width: 100%;
+// }
+
 .ega_view_container > ol > li > ngx-gist > iframe {
   min-height: 500px !important;
 }
@@ -60,6 +61,28 @@ ngb-tabset {
   left: 0;
   top: 0;
 }
+.ega_grid_image {
+  width: 75%;
+  display: block;
+  margin: auto;
+  padding: 5%;
+}
+.ega_view_container img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 5%;
+}
+// tldr styles
+
+.tldr {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 5% 0;
+}
+.tldr div {
+  padding: 5% 2%;
+}
+
 @media (max-width: 64em) {
   ngb-tabset {
     grid-template-columns: auto;
