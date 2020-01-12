@@ -1,12 +1,8 @@
-ngb-tabset {
-  display: inline-grid;
-  grid-template-columns: 20vw auto;
-  width: 100%;
-}
-
 img {
+  display: grid;
   width: 100%;
-  padding: 5% 0%;
+  margin: auto;
+  padding: 0 0 5% 0;
 }
 .ega_hardiness_info {
   padding: 1% 3%;

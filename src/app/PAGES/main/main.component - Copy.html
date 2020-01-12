@@ -1,0 +1,67 @@
+<div id="ega_main_background">
+  <!-- <app-nav-bar-hamburger></app-nav-bar-hamburger> -->
+
+  <h1 id="ega_title">ENEA ANTONICELLI</h1>
+
+  <div class="ega_main_card_container">
+    <div professional id="ega_main_card_professional">
+      <button mat-button [matMenuTriggerFor]="menu1">Professional</button>
+      <mat-menu #menu1="matMenu">
+        <a routerLink="/professional-resume" routerLinkActive="active"
+          ><button mat-menu-item>Resume</button></a
+        >
+        <a routerLink="/professional-programming" routerLinkActive="active"
+          ><button mat-menu-item>Programming</button></a
+        >
+        <a routerLink="/simbi" routerLinkActive="active"
+          ><button mat-menu-item>Simbi</button></a
+        >
+      </mat-menu>
+    </div>
+    <!-- <div class="ega_backgroundimage">
+      <div id="ega_backgroundimage_pro">
+        <img
+          class="ega_logoman_image_left"
+          src="/assets/images/work.png"
+          alt="Personal logo - Man image with Cube over head"
+        />
+        <img
+          class="ega_logoman_image_right"
+          src="/assets/images/druid.png"
+          alt="Personal logo - Man image with Cube over head"
+        />
+      </div>
+    </div> -->
+
+    <div leisure id="ega_main_card_leisure">
+      <button mat-button [matMenuTriggerFor]="menu2">Leisure</button>
+      <mat-menu #menu2="matMenu">
+        <a routerLink="/leisure-programming" routerLinkActive="active"
+          ><button mat-menu-item>Programming</button></a
+        >
+        <a routerLink="/leisure-gardening" routerLinkActive="active"
+          ><button mat-menu-item>Gardening</button></a
+        >
+        <a routerLink="/leisure-photography" routerLinkActive="active"
+          ><button mat-menu-item>Photography</button></a
+        >
+      </mat-menu>
+    </div>
+  </div>
+  <!-- <div id="ega_binary">
+    <p>
+      01010011 01100101 01100101 01101101 01101001 01101110 01100111 01101100
+      01111001 00100000 01101001 01101110 01110100 01100101 01101100 01101100
+      01101001 01100111 01100101 01101110 01110100 00100000 01100010 01101001
+      01101110 01100001 01110010 01111001 00100000 01110100 01101000 01100001
+      01110100 00100000 01100100 01101111 01100101 01110011 01101110 00100111
+      01110100 00100000 01100001 01100011 01110100 01110101 01100001 01101100
+      01101100 01111001 00100000 01101101 01100101 01100001 01101110 00100000
+      01100001 01101110 01111001 01110100 01101000 01101001 01101110 01100111
+      00101110 00100000 01110011 01110100 01101111 01110000 00100000 01110100
+      01110010 01111001 01101001 01101110 01100111 00100000 01110100 01101111
+      00100000 01100111 01101111 01101111 01100111 01101100 01100101 00100000
+      01101001 01110100 00101110
+    </p>
+  </div> -->
+</div>
